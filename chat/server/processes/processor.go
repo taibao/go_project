@@ -1,8 +1,7 @@
-package main
+package processes
 
 import (
 	"chat/common/message"
-	"chat/server/processes"
 	"chat/server/utils"
 	"fmt"
 	"io"
@@ -15,12 +14,12 @@ type Processor struct{
 }
 
 //功能：根据客户端发送消息种类不同，决定调用哪个函数来处理
-func (this *Processor) serverProcessMes(mes *message.Message) (err error){
+func (this *Processor) ServerProcessMes(mes *message.Message) (err error){
 
 	switch mes.Type{
 	case message.LoginMesType:
 		//处理登录逻辑
-		processes := &processes.UserProcess{
+		processes := &UserProcess{
 			Conn:this.Conn,
 		}
 		err = processes.ServerProcessLogin(mes)
@@ -33,7 +32,7 @@ func (this *Processor) serverProcessMes(mes *message.Message) (err error){
 	return
 }
 
-func (this *Processor) process2() (err error){
+func (this *Processor) Process2() (err error){
 	//客户端循环发送信息
 	for{
 		//这里我们将读取数据包，直接封装成一个函数readPkg，返回Message，Err
@@ -53,7 +52,9 @@ func (this *Processor) process2() (err error){
 			}
 		}
 
-		err = this.serverProcessMes(&mes)
+		fmt.Println("发送内容=",mes)
+
+		err = this.ServerProcessMes(&mes)
 		if err != nil{
 			return err
 		}

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"chat/server/processes"
 	"fmt"
 	"net"
 )
@@ -10,10 +11,10 @@ func process(conn net.Conn){
 	//需要延时关闭conn
 	defer conn.Close()
 	//调用主控
-	processor := &Processor{
+	processor := &processes.Processor{
 		Conn : conn,
 	}
-	err := processor.process2()
+	err := processor.Process2()
 	if err != nil{
 		fmt.Println("客户端和服务器通讯协程错误=err",err)
 		return

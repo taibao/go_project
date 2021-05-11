@@ -18,7 +18,6 @@ type Transfer struct{
 }
 
 func (this *Transfer) ReadPkg() (mes message.Message,err error){
-	fmt.Println("读取客户端发送的数据...")
 	//conn.Read在conn没有被关闭的情况下才会阻塞
 	//如果客户端关闭了conn，就不会阻塞了
 	_,err = this.Conn.Read(this.Buf[:4])
@@ -40,7 +39,7 @@ func (this *Transfer) ReadPkg() (mes message.Message,err error){
 	//把pkgLen反序列化成-》message.Message
 	err = json.Unmarshal(this.Buf[:pkgLen],&mes)
 	if err != nil{
-		fmt.Println("json.unmarshal err =",err)
+		fmt.Println("json.unmarshal err =",err,mes)
 		return
 	}
 
