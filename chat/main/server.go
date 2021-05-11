@@ -1,45 +1,76 @@
 package main
 
 import (
+	"chat/client"
 	"chat/common/message"
-	"encoding/binary"
 	"encoding/json"
-	"errors"
 	"fmt"
 	"io"
 	"net"
 )
 
-func readPkg(conn net.Conn) (mes message.Message,err error){
-	buf := make([]byte,8096)
-	fmt.Println("读取客户端发送的数据...")
-	//conn.Read在conn没有被关闭的情况下才会阻塞
-	//如果客户端关闭了conn，就不会阻塞了
-	_,err = conn.Read(buf[:4])
+//处理登录请求
+func serverProcessLogin(conn net.Conn,mes *message.Message)(err error){
+	//从mes中取出mes.Data
+	var loginMes message.LoginMes
+	err = json.Unmarshal([]byte(mes.Data),&loginMes)
 	if err != nil{
-		err = errors.New("read pkg header error")
-		return
-	}
-	//fmt.Println("读到的buf=",buf[:4])
-	//根据buf[:4]转成一个uint32类型
-	var pkgLen uint32
-	pkgLen = binary.BigEndian.Uint32(buf[0:4])
-	//根据pkgLen读取消息内容
-	n,err := conn.Read(buf[:pkgLen]) //是把conn的数据读到buf里面去
-	if n != int(pkgLen) || err != nil{
-		//err = errors.New("read pkg body error")
+		fmt.Println("json.Unmarshal fail err=",err)
 		return
 	}
 
-	//把pkgLen反序列化成-》message.Message
-	err = json.Unmarshal(buf[:pkgLen],&mes)
- 	if err != nil{
- 		fmt.Println("json.unmarshal err =",err)
- 		return
+	//先声明一个resMes
+	var resMes message.Message
+	resMes.Type = message.LoginResMesType
+
+	//再声明一个LoginResMes,并完成赋值
+	var loginResMes message.LoginResMes
+
+	if loginMes.UserId == 100 && loginMes.UserPwd == "123456"{
+		//合法
+		loginResMes.Code = 200
+	}else{
+		//不合法
+		loginResMes.Code = 500
+		loginResMes.Error = "该用户不存在，请注册再使用..."
 	}
 
+	//将loginResMes序列化
+	data,err := json.Marshal(loginResMes)
+	if err != nil{
+		fmt.Println("loginResMes序列化失败",err)
+		return
+	}
+	//将data赋值给resMes
+	resMes.Data = string(data)
+
+	//5.对resMes 进行序列化，准备发送
+	data,err = json.Marshal(resMes)
+	if err != nil{
+		fmt.Println("loginResMes序列化失败",err)
+		return
+	}
+	//6: 发送data,我们将其封装到writePkg函数
+	err = client.WritePkg(conn,data)
 	return
 }
+
+
+//功能：根据客户端发送消息种类不同，决定调用哪个函数来处理
+func serverProcessMes(conn net.Conn,mes *message.Message) (err error){
+
+	switch mes.Type{
+	case message.LoginMesType:
+		//处理登录逻辑
+		err = serverProcessLogin(conn,mes)
+	case message.RegisterMesType:
+		//处理注册逻辑
+	default:
+		fmt.Println("消息类型不存在，无法处理。。。")
+	}
+	return
+}
+
 
 //处理和客户端的通讯
 func process(conn net.Conn){
@@ -48,7 +79,7 @@ func process(conn net.Conn){
 	//读客户端发送的信息
 	for{
 		//这里我们将读取数据包，直接封装成一个函数readPkg，返回Message，Err
-		mes,err := readPkg(conn)
+		mes,err := client.ReadPkg(conn)
 		if err != nil{
 			if err ==io.EOF{
 				fmt.Println("客户端退出，服务器端也退出")
@@ -58,7 +89,11 @@ func process(conn net.Conn){
 				return
 			}
 		}
-		fmt.Println("消息内容 mes=",mes)
+		//fmt.Println("消息内容 mes=",mes)
+		err = serverProcessMes(conn,&mes)
+		if err != nil{
+			return
+		}
 	}
 }
 

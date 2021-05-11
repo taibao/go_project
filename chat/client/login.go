@@ -6,7 +6,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"net"
-	"time"
 )
 
 //写一个函数，完成登录
@@ -72,8 +71,23 @@ func Login(userId int,userPwd string) (err error){
 	}
 
 	//休眠20
-	time.Sleep(20*time.Second)
-	fmt.Println("休眠了20...")
+	//time.Sleep(20*time.Second)
+	//fmt.Println("休眠了20...")
 	//还需要处理服务器端返回的消息
+	mes,err = ReadPkg(conn) //mes
+	if err != nil{
+		fmt.Println("ReadPkg(conn) failed err=",err)
+		return
+	}
+
+	//将mes的Data部分反序列化成loginResMes
+	var loginResMes message.LoginResMes
+	err = json.Unmarshal([]byte(mes.Data),&loginResMes)
+	if loginResMes.Code == 200{
+		fmt.Println("登录成功")
+	}else if loginResMes.Code == 500{
+		fmt.Println("登录失败，错误信息=",loginResMes.Error)
+	}
+
 	return
 }
