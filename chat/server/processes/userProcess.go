@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net"
+	"chat/server/model"
 )
 
 type UserProcess struct{
@@ -32,14 +33,26 @@ func (this *UserProcess) ServerProcessLogin(mes *message.Message)(err error){
 	//再声明一个LoginResMes,并完成赋值
 	var loginResMes message.LoginResMes
 
-	if loginMes.UserId == 100 && loginMes.UserPwd == "123456"{
-		//合法
-		loginResMes.Code = 200
-	}else{
-		//不合法
+	//需要到redis数据库去完成验证
+	//使用model.MyUserDao 到redis去验证
+	user,err := model.MyUserDao.Login(loginMes.UserId,loginMes.UserPwd)
+	if err != nil{
 		loginResMes.Code = 500
-		loginResMes.Error = "该用户不存在，请注册再使用..."
+		//
+
+	}else{
+		loginResMes.Code = 200
+		fmt.Println(user,"登录成功")
 	}
+
+	//if loginMes.UserId == 100 && loginMes.UserPwd == "123456"{
+	//	//合法
+	//	loginResMes.Code = 200
+	//}else{
+	//	//不合法
+	//	loginResMes.Code = 500
+	//	loginResMes.Error = "该用户不存在，请注册再使用..."
+	//}
 
 	//将loginResMes序列化
 	data,err := json.Marshal(loginResMes)

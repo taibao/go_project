@@ -5,6 +5,13 @@ import(
 	"github.com/garyburd/redigo/redis"
 )
 
+//我们在服务器启动后，就初始化一个userDao实例
+//把它做成全局的变量，在需要和redis操作时，就直接使用即可
+var (
+	MyUserDao *UserDao
+)
+
+
 //定义一个UserDao的结构体,完成对user结构体的各种操作
 type UserDao struct{
 	pool *redis.Pool

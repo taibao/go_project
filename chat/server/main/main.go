@@ -1,9 +1,12 @@
 package main
 
 import (
+	"chat/server/model"
 	"chat/server/processes"
+	"chat/server/utils"
 	"fmt"
 	"net"
+	"time"
 )
 
 //处理和客户端的通讯
@@ -22,7 +25,19 @@ func process(conn net.Conn){
 
 }
 
+//编写函数完成对UserDao的初始化任务
+func initUserDao(){
+	//这里的pool本身就是一个全局的变量
+	//需要注意一个初始化顺序的问题
+	//initPool
+	model.MyUserDao = model.NewUserDao(utils.Pool)
+}
+
 func main(){
+	//当服务器启动时
+	utils.InitPool("localhost:6379",16,0,300*time.Second)
+	initUserDao()
+
 	//提示信息
 	fmt.Println("服务器在8889端口监听。。。")
 	listen,err := net.Listen("tcp","0.0.0.0:8889") //广播8889端口
