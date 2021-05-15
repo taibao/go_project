@@ -6,6 +6,10 @@ import (
 )
 
 
+//todo 实现私聊
+//todo 离线就把个人从在线列表去掉
+//todo 实现离线留言，在群聊时，如果某个用户没有在线，当登录后，可以接受离线消息
+
 //定义两个变量，表示id和密码
 var userId int
 var userPwd string
