@@ -16,16 +16,20 @@ type Processor struct{
 //功能：根据客户端发送消息种类不同，决定调用哪个函数来处理
 func (this *Processor) ServerProcessMes(mes *message.Message) (err error){
 
-	switch mes.Type{
+	switch mes.Type {
 	case message.LoginMesType:
 		//处理登录逻辑
 		processes := &UserProcess{
-			Conn:this.Conn,
+			Conn: this.Conn,
 		}
 		err = processes.ServerProcessLogin(mes)
 
 	case message.RegisterMesType:
 		//处理注册逻辑
+		processes := &UserProcess{
+			Conn: this.Conn,
+		}
+		err = processes.ServerProcessRegister(mes)
 	default:
 		fmt.Println("消息类型不存在，无法处理。。。")
 	}

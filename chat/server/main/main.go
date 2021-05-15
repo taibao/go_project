@@ -33,11 +33,13 @@ func initUserDao(){
 	model.MyUserDao = model.NewUserDao(utils.Pool)
 }
 
-func main(){
+func init(){
 	//当服务器启动时
 	utils.InitPool("localhost:6379",16,0,300*time.Second)
 	initUserDao()
+}
 
+func main(){
 	//提示信息
 	fmt.Println("服务器在8889端口监听。。。")
 	listen,err := net.Listen("tcp","0.0.0.0:8889") //广播8889端口
