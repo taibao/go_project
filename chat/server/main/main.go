@@ -35,7 +35,7 @@ func initUserDao(){
 
 func init(){
 	//当服务器启动时
-	utils.InitPool("localhost:6379",16,0,300*time.Second)
+	utils.InitPool("localhost:6397",16,0,300*time.Second)
 	initUserDao()
 }
 
