@@ -4,10 +4,19 @@ const unreg_code = 500
 const succ_code = 200
 
 const (
-	LoginMesType       = "LoginMes"
-	LoginResMesType    = "LoginResMes"
-	RegisterMesType    = "RegisterMes"
-	RegisterResMesType = "RegisterResMes"
+	LoginMesType            = "LoginMes"
+	LoginResMesType         = "LoginResMes"
+	RegisterMesType         = "RegisterMes"
+	RegisterResMesType      = "RegisterResMes"
+	NotifyUserStatusMesType = "NotifyUserStatusMes"
+	SmsMesType = "SmsMes"
+)
+
+//我们定义几个用户状态的常量
+const (
+	UserOnline = iota
+	UserOffline
+	UserBusyStatus
 )
 
 type Message struct{
@@ -36,5 +45,16 @@ type RegisterResMes struct{
 	Error string `json:"error"` //返回错误信息
 }
 
+//为配合服务器推送用户状态变化的消息
+type NotifyUserStatusMes struct{
+	UserId int `json:"userId"` //用户id
+	Status int `json:"status"` //用户的状态
+}
 
+//发送消息类型
+type SmsMes struct{
+	Content string `json:"content"`
+	User //匿名结构体
+}
 
+//服务器反馈SmsReMes

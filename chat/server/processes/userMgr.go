@@ -15,7 +15,7 @@ type UserMgr struct{
 //完成对userMgr初始化工作
 func init(){
 	userMgr = &UserMgr{
-		onlineUsers:make(map[int]*UserProcess,1024),
+		onlineUsers: make(map[int]*UserProcess,1024),
 	}
 }
 

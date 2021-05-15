@@ -2,6 +2,8 @@ package process
 
 import (
 	"chat/client/utils"
+	"chat/common/message"
+	"encoding/json"
 	"fmt"
 	"net"
 	"os"
@@ -16,12 +18,19 @@ func ShowMenu(){
 	fmt.Println("-----------4.退出系统------------")
 	fmt.Println("-----------请选择（1-4）:------------")
 	var key int
+	var content string
+
+	smsProcess := &SmsProcess{}
+
 	fmt.Scanf("%d\n",&key)
 	switch key{
 	case 1:
-		fmt.Println("显示在线用户列表-")
+		//fmt.Println("显示在线用户列表-")
+		outputOnlineUser()
 	case 2:
-		fmt.Println("发送消息")
+		fmt.Println("请输入你想对大家说的话：")
+		fmt.Scanf("%s\n",&content)
+		smsProcess.sendGroupMes(content)
 	case 3:
 		fmt.Println("消息列表")
 	case 4:
@@ -46,6 +55,21 @@ func serverProcessMes(conn net.Conn){
 			return
 		}
 		//如果读取到消息，又是下一步处理逻辑
+		switch mes.Type{
+			case message.NotifyUserStatusMesType: //有人上线了
+			//处理
+			//1.取出NotifyUserStatusMes
+			var notifyUserStatusMes message.NotifyUserStatusMes
+			json.Unmarshal([]byte(mes.Data),notifyUserStatusMes)  //解析data
+			//2.把这个用户的信息状态保存到客户map[int]User中
+			updateUserStatus(&notifyUserStatusMes)
+			//处理
+			case message.SmsMesType: //有人群发消息了
+				outputGroupMes(&mes)
+			default:
+				fmt.Println("服务器端返回未知的消息类型")
+			}
+
 		fmt.Printf("mes=%v\n",mes)
 
 	}
