@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"time"
+)
+
 //时间和日期相关函数
 func main(){
 
@@ -67,3 +72,11 @@ func main(){
 //		fmt.Println(str + strconv.Itoa(i))
 //	}
 //}
+
+
+func GetYMDForTableName() string {
+	y, m, d := time.Now().Date()
+	s := fmt.Sprintf("%d%02d%02d", y, m, d)
+	return s
+}
+
