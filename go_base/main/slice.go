@@ -5,12 +5,12 @@ import "fmt"
 func main(){
 
 	//演示切片的基本使用
-	//var intArr [5]int = [...]int{1,22,33,66,99}
+	var intArr [5]int = [...]int{1,22,33,66,99}
 	////声明一个切片
-	//slice := intArr[1:3] //表示引用到intArr的下标1,2的元素。不包括3
+	slice := intArr[1:3] //表示引用到intArr的下标1,2的元素。不包括3
 	////[22 33]
 	//fmt.Println("intArr=",intArr)
-	//fmt.Println("slice的元素是",slice)
+	fmt.Println("slice的元素是",slice)
 	//fmt.Println("slice的元素个数=",len(slice))
 	//fmt.Println("slice的容量=",cap(slice)) //切片的容量是动态变化的，一般是长度的两倍
 
@@ -49,7 +49,7 @@ func main(){
 
 	//切片求斐波那契数
 
-	fmt.Println(fbn(10))
+	//fmt.Println(fbn(10))
 
 }
 

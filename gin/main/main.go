@@ -23,10 +23,11 @@ func main(){
 	//r.POST("/XXXPost",getting)
 	//r.PUT( "/XXXPut")
 
+	http02()
 	//http04()
 
 	//路由组
-	routeGroup()
+	//routeGroup()
 }
 
 
