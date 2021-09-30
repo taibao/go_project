@@ -41,7 +41,7 @@ func init(){
 		IdleTimeout:100, //最大空闲时间
 		Dial:func()(redis.Conn,error){
 			//初始化连接的代码，连接哪个ip
-			return redis.Dial("tcp","localhost:6397")
+			return redis.Dial("tcp","127.0.0.1:6379")
 		},
 	}
 }
