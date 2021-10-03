@@ -49,7 +49,11 @@ func main(){
 
 	//切片求斐波那契数
 
-	fmt.Println(fbn(10))
+	//fmt.Println(fbn(10))
+
+	//求字符串后两位
+	str := "13966867114"
+	fmt.Println(str[len(str)-2:])
 
 }
 

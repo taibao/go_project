@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bea7ac3d-85bc-49bc-b85a-7eff12f5ddf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app_business_go/internal/server/api/v2/subscribe_record.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_business_go/internal/server/rules/validator/sdk_app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_business_go/models/sdk_app/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_business_go/models/sdk_app/union_subscribe_record_0.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaoe_api_log_service/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xiaoe_api_log_service/model/union_subscribe_record_0.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_go/cmd/job/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/cmd/job/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_go/cmd/server/routers/groups/alive_app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/cmd/server/routers/groups/alive_app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_go/models/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/models/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_go/runtime/logs/error_abs_20210829.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/runtime/logs/error_abs_20210829.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_go/runtime/logs/info_abs_20210829.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/runtime/logs/info_abs_20210829.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/script/logic/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/script/logic/worker.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app_business_go" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1yATYzUH0G3jDfsJg31wWLzPJ2U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xiaoe_api_log_service/model" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xiaoe_api_log_service/model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xiaoe_api_log_service/model" />
+    </key>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="698" y="173" key="SettingsEditor" timestamp="1631712247305">
+      <screen x="0" y="25" width="1680" height="939" />
+    </state>
+    <state x="2668" y="-140" key="SettingsEditor/0.25.1440.875/1440.-350.2560.1329@1440.-350.2560.1329" timestamp="1631693502082" />
+    <state x="698" y="173" key="SettingsEditor/0.25.1680.939@0.25.1680.939" timestamp="1631712247305" />
+    <state x="358" y="354" width="674" height="486" key="find.popup" timestamp="1631710719564">
+      <screen x="0" y="25" width="1680" height="940" />
+    </state>
+    <state x="1986" y="145" width="667" height="486" key="find.popup/0.25.1440.805/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1631696504167" />
+    <state x="358" y="354" width="674" height="486" key="find.popup/0.25.1680.940@0.25.1680.940" timestamp="1631710719564" />
+    <state x="358" y="356" width="674" height="486" key="find.popup/0.25.1680.947@0.25.1680.947" timestamp="1631701699125" />
+  </component>
+</project>
