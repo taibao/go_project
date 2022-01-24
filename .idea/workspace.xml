@@ -2,29 +2,172 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bea7ac3d-85bc-49bc-b85a-7eff12f5ddf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app_business_go/internal/server/api/v2/subscribe_record.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_business_go/internal/server/rules/validator/sdk_app.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_business_go/models/sdk_app/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_business_go/models/sdk_app/union_subscribe_record_0.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xiaoe_api_log_service/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xiaoe_api_log_service/model/union_subscribe_record_0.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_business_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_business_go/cmd/job/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/cmd/job/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_business_go/cmd/server/routers/groups/alive_app.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/cmd/server/routers/groups/alive_app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_business_go/models/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/models/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_business_go/runtime/logs/error_abs_20210829.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/runtime/logs/error_abs_20210829.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_business_go/runtime/logs/info_abs_20210829.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_go/runtime/logs/info_abs_20210829.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/.golangci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/Vagrantfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_bindings.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_create_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_create_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_delete_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_delete_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_describe_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_describe_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_filter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/acl_types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/add_offsets_to_txn_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/add_offsets_to_txn_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/add_partitions_to_txn_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/add_partitions_to_txn_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/admin.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/alter_configs_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/alter_configs_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/alter_partition_reassignments_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/alter_partition_reassignments_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/api_versions_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/api_versions_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/async_producer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/balance_strategy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/broker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/compress.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/config_resource_type.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/consumer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/consumer_group.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/consumer_group_members.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/consumer_metadata_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/consumer_metadata_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/control_record.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/crc32_field.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/create_partitions_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/create_partitions_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/create_topics_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/create_topics_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/decompress.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/delete_groups_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/delete_groups_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/delete_records_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/delete_records_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/delete_topics_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/delete_topics_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/describe_configs_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/describe_configs_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/describe_groups_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/describe_groups_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/describe_log_dirs_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/describe_log_dirs_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/encoder_decoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/end_txn_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/end_txn_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/fetch_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/fetch_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/find_coordinator_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/find_coordinator_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/gssapi_kerberos.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/heartbeat_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/heartbeat_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/init_producer_id_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/init_producer_id_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/interceptors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/join_group_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/join_group_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/kerberos_client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/leave_group_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/leave_group_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/length_field.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/list_groups_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/list_groups_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/list_partition_reassignments_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/list_partition_reassignments_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/message.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/message_set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/metadata_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/metadata_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/metrics.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/mockbroker.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/mockkerberos.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/mockresponses.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/offset_commit_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/offset_commit_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/offset_fetch_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/offset_fetch_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/offset_manager.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/offset_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/offset_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/packet_decoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/packet_encoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/partitioner.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/prep_encoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/produce_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/produce_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/produce_set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/real_decoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/real_encoder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/record.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/record_batch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/records.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/response_header.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sarama.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sasl_authenticate_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sasl_authenticate_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sasl_handshake_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sasl_handshake_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sticky_assignor_user_data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sync_group_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sync_group_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/sync_producer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/timestamp.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/txn_offset_commit_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/txn_offset_commit_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/github.com/Shopify/sarama/zstd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go_base/main/hash.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka/main/consumer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_script_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_script_go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_go/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_base/main/arr.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_base/main/arr.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_base/main/date.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_base/main/date.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/script/logic/worker.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/script/logic/worker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/cmd/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/cmd/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/component/phone_suscribe_consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/component/phone_suscribe_consumer.go" afterDir="false" />
+    </list>
+    <list id="0fb5379a-1b6c-40af-966a-0e8c820898e1" name="添加消费分组" comment="添加消费分组">
+      <changelist_data name="vitaszhuo" email="vitaszhuo@xiaoe-teach.com" date="1639032014000" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="src" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app_business_go" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app_business_script_go" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -34,32 +177,47 @@
     </option>
   </component>
   <component name="ProjectId" id="1yATYzUH0G3jDfsJg31wWLzPJ2U" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/xiaoe_api_log_service/model" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app_business_script_go/model" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xiaoe_api_log_service/model" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_business_script_go/model" />
+      <recent name="$PROJECT_DIR$/app_business_script_go/component/resources" />
+      <recent name="$PROJECT_DIR$/app_business_script_go/component" />
+      <recent name="$PROJECT_DIR$/app_business_script_go/script/logic/handle" />
+      <recent name="$PROJECT_DIR$/app_business_script_go/script/logic/worker" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_business_script_go/component/resources" />
       <recent name="$PROJECT_DIR$/xiaoe_api_log_service/model" />
     </key>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.service" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -75,16 +233,100 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="698" y="173" key="SettingsEditor" timestamp="1631712247305">
-      <screen x="0" y="25" width="1680" height="939" />
+    <state x="440" y="187" key="#Inspections" timestamp="1642575395543">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="2668" y="-140" key="SettingsEditor/0.25.1440.875/1440.-350.2560.1329@1440.-350.2560.1329" timestamp="1631693502082" />
-    <state x="698" y="173" key="SettingsEditor/0.25.1680.939@0.25.1680.939" timestamp="1631712247305" />
-    <state x="358" y="354" width="674" height="486" key="find.popup" timestamp="1631710719564">
-      <screen x="0" y="25" width="1680" height="940" />
+    <state x="440" y="187" key="#Inspections/0.0.1680.1050@0.0.1680.1050" timestamp="1642575395543" />
+    <state x="383" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641956046372">
+      <screen x="0" y="25" width="1680" height="946" />
     </state>
-    <state x="1986" y="145" width="667" height="486" key="find.popup/0.25.1440.805/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1631696504167" />
-    <state x="358" y="354" width="674" height="486" key="find.popup/0.25.1680.940@0.25.1680.940" timestamp="1631710719564" />
-    <state x="358" y="356" width="674" height="486" key="find.popup/0.25.1680.947@0.25.1680.947" timestamp="1631701699125" />
+    <state x="383" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.946@0.25.1680.946" timestamp="1641956046372" />
+    <state x="2432" y="47" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641288929610">
+      <screen x="1440" y="-375" width="2560" height="1440" />
+    </state>
+    <state x="2432" y="47" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1641288929610" />
+    <state x="651" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1640059620704" />
+    <state x="651" y="301" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1680.942@0.25.1680.942" timestamp="1636616476448" />
+    <state x="576" y="233" key="CommitChangelistDialog2" timestamp="1639993716851">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2318" y="-56" key="CommitChangelistDialog2/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1639032407152" />
+    <state x="576" y="233" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1639993716851" />
+    <state x="1541" y="-257" width="2361" height="1151" key="DiffContextDialog" timestamp="1641795431169">
+      <screen x="1440" y="-350" width="2560" height="1336" />
+    </state>
+    <state x="1540" y="-275" width="2360" height="1240" key="DiffContextDialog/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1640186419631" />
+    <state x="66" y="73" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1639993711056" />
+    <state x="1541" y="-257" width="2361" height="1151" key="DiffContextDialog/0.25.1440.875/1440.-350.2560.1336@1440.-350.2560.1336" timestamp="1641795431169" />
+    <state x="66" y="92" width="1549" height="827" key="DiffContextDialog/0.25.1680.960@0.25.1680.960" timestamp="1641614919769" />
+    <state x="69" y="25" key="MergeDialog" timestamp="1641894871078">
+      <screen x="0" y="25" width="1680" height="947" />
+    </state>
+    <state x="2279" y="-124" key="MergeDialog/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1639032402555" />
+    <state x="69" y="25" key="MergeDialog/0.25.1680.947@0.25.1680.947" timestamp="1641894871078" />
+    <state x="353" y="414" key="MultipleFileMergeDialog" timestamp="1641901509302">
+      <screen x="0" y="25" width="1680" height="951" />
+    </state>
+    <state x="2568" y="-30" key="MultipleFileMergeDialog/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1639032402605" />
+    <state x="552" y="245" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1639032939801" />
+    <state x="353" y="412" key="MultipleFileMergeDialog/0.25.1680.947@0.25.1680.947" timestamp="1641894871204" />
+    <state x="353" y="414" key="MultipleFileMergeDialog/0.25.1680.951@0.25.1680.951" timestamp="1641901509302" />
+    <state x="902" y="204" key="RollbackChangesDialog" timestamp="1642678707838">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2814" y="-95" key="RollbackChangesDialog/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642648862376" />
+    <state x="902" y="204" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1642678707838" />
+    <state x="902" y="208" key="RollbackChangesDialog/0.25.1680.942@0.25.1680.942" timestamp="1636704461696" />
+    <state x="902" y="209" key="RollbackChangesDialog/0.25.1680.946@0.25.1680.946" timestamp="1641960897782" />
+    <state x="902" y="212" key="RollbackChangesDialog/0.25.1680.960@0.25.1680.960" timestamp="1641614443676" />
+    <state x="698" y="173" key="SettingsEditor" timestamp="1636704434961">
+      <screen x="0" y="25" width="1680" height="942" />
+    </state>
+    <state x="698" y="173" key="SettingsEditor/0.25.1680.942@0.25.1680.942" timestamp="1636704434961" />
+    <state width="590" height="445" key="SwitcherDM" timestamp="1642663178371">
+      <screen x="1440" y="-375" width="2560" height="1440" />
+    </state>
+    <state width="590" height="445" key="SwitcherDM/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642663178371" />
+    <state x="2804" y="-104" key="VCS.ChangeListViewerDialog" timestamp="1638955667761">
+      <screen x="1440" y="-375" width="2560" height="1440" />
+    </state>
+    <state x="2804" y="-104" key="VCS.ChangeListViewerDialog/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1638955667761" />
+    <state x="895" y="202" key="VCS.ChangeListViewerDialog/0.25.1680.942@0.25.1680.942" timestamp="1636704696781" />
+    <state x="100" y="100" width="1480" height="850" key="VCS.FileHistoryDialog" timestamp="1642574288792">
+      <screen x="0" y="25" width="1680" height="946" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="VCS.FileHistoryDialog/0.25.1680.946@0.25.1680.946" timestamp="1642574288792" />
+    <state x="2509" y="266" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1640829177915">
+      <screen x="1440" y="-375" width="2560" height="1440" />
+    </state>
+    <state x="2509" y="266" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1640829177915" />
+    <state x="2029" y="114" width="1073" height="748" key="find.popup" timestamp="1642666742027">
+      <screen x="1440" y="-375" width="2560" height="1440" />
+    </state>
+    <state x="2029" y="114" width="1073" height="748" key="find.popup/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642666742027" />
+    <state x="358" y="127" width="987" height="791" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1642575148192" />
+    <state x="1986" y="146" width="1072" height="734" key="find.popup/0.25.1440.798/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1637547728993" />
+    <state x="1986" y="-179" width="1504" height="1066" key="find.popup/0.25.1440.807/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641392768072" />
+    <state x="358" y="355" width="703" height="488" key="find.popup/0.25.1680.942@0.25.1680.942" timestamp="1636701636680" />
+    <state x="366" y="348" width="705" height="492" key="find.popup/0.25.1680.946@0.25.1680.946" timestamp="1641959227111" />
+    <state x="358" y="141" width="987" height="722" key="find.popup/0.25.1680.958@0.25.1680.958" timestamp="1641526097360" />
+    <state x="602" y="137" key="refactoring.ChangeSignatureDialog" timestamp="1638978110528">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="602" y="137" key="refactoring.ChangeSignatureDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1638978110528" />
+    <state x="2210" y="-55" width="1021" height="929" key="search.everywhere.popup" timestamp="1642662559668">
+      <screen x="1440" y="-375" width="2560" height="1440" />
+    </state>
+    <state x="2210" y="-55" width="1021" height="929" key="search.everywhere.popup/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642662559668" />
+    <state x="505" y="233" width="670" height="58" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1642411013593" />
+    <state x="2210" y="-36" width="1021" height="913" key="search.everywhere.popup/0.25.1440.809/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641545953894" />
+    <state x="2210" y="-36" width="1021" height="915" key="search.everywhere.popup/0.25.1440.817/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641524502859" />
+    <state x="2210" y="-54" width="1021" height="863" key="search.everywhere.popup/0.25.1440.875/1440.-350.2560.1336@1440.-350.2560.1336" timestamp="1641454335692" />
+    <state x="505" y="235" width="670" height="610" key="search.everywhere.popup/0.25.1680.946@0.25.1680.946" timestamp="1639548797910" />
+    <state x="505" y="238" width="671" height="620" key="search.everywhere.popup/0.25.1680.958@0.25.1680.958" timestamp="1641526658403" />
+    <state x="570" y="441" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1639990008026">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="570" y="441" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1639990008026" />
   </component>
 </project>

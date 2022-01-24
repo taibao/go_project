@@ -1,7 +1,28 @@
 package main
 
+import (
+	"fmt"
+	"time"
+)
+
 //时间和日期相关函数
 func main(){
+
+	//计算1到100亿相加需要3秒
+	//now := time.Now()
+	//start := int(now.UnixNano()/1000000)
+	//
+	//var  sum int64
+	//var i int64
+	//for i =1;i<10000000000;i++{
+	//	sum += i
+	//}
+	//
+	//now2 := time.Now()
+	//end := int(now2.UnixNano() / 1000000)
+	//
+	//fmt.Println(end-start)
+
 
 	//获取当前时间
 	//now := time.Now()
@@ -38,15 +59,16 @@ func main(){
 	//time.Sleep(1000 * time.Millisecond)
 	//fmt.Println("我等了100毫秒")
 
-	//var i int = 0
-	//for{
-	//	i++
-	//	fmt.Println(i)
-	//	time.Sleep(time.Millisecond * 100)
-	//	if(i==100){
-	//		break
-	//	}
-	//}
+	i:=0
+	sleepTime := time.Duration(200)
+	for {
+		i++
+		fmt.Println(i)
+		time.Sleep(time.Millisecond * sleepTime)
+		if i==10 {
+			break
+		}
+	}
 
 //unix和unixNano的使用
 //fmt.Printf("unix时间戳=%v unixnano时间戳=%v",now.Unix(),now.UnixNano())
@@ -57,7 +79,10 @@ func main(){
 //fmt.Printf("执行test03耗费时间%v纳秒",end-start)
 
 
-
+	//data := strconv.Itoa(int(time.Now().Unix()))
+	//id := data[len(data)-6:]
+	//
+	//fmt.Println(id)
 
 
 }
@@ -67,3 +92,6 @@ func main(){
 //		fmt.Println(str + strconv.Itoa(i))
 //	}
 //}
+
+
+

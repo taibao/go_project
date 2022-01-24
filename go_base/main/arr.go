@@ -1,9 +1,34 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strings"
+)
 
 func main(){
+	//fmt.Println(91/10)
 
+
+	//测试break
+
+
+	for i:=0; i<2; i++{
+		j:=0
+		for {
+			if j>=5{
+				break
+			}
+			j++
+			fmt.Println("第",i,"列")
+		}
+	}
+
+
+
+
+
+	os.Exit(1)
 	//使用数组求平均
 	//
 	//var hens [6]float64 //定义数组
@@ -128,9 +153,13 @@ func main(){
 //}
 
 
+
 //初始化数组
 var arr = [2][3]int{{1,2,3},{4,5,6}}
 fmt.Println("arr=",arr)
+
+data := []string{"apppcHqlTPT3482","13066867190"}
+fmt.Println(data)
 
 //二维数组遍历
 for i,v := range arr{
@@ -140,5 +169,27 @@ for i,v := range arr{
 	fmt.Println()
 }
 
-
+	params := genSQLRangeStrByIntArr([]string{"123","13066867190"})
+	fmt.Println(params)
+	s :=  fmt.Sprintf("SELECT * FROM t_phone_subscribe_record_0 WHERE (app_id=? AND phone_name=?)" ,params)
+	fmt.Println(s)
 }
+
+
+
+
+func genSQLRangeStrByIntArr(arr []string) (res string) {
+	var tempStrArr = make([]string, len(arr))
+	for k, v := range arr {
+		tempStrArr[k] = fmt.Sprintf("%s", v)
+	}
+	res = "(" + strings.Join(tempStrArr, ",") + ")"
+	return
+}
+
+
+
+
+
+
+
