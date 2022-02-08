@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/abs_go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app_business_script_go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app_go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/task_go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/xiaoe_api_log_service" vcs="Git" />
+  </component>
+</project>
