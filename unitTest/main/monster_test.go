@@ -1,6 +1,9 @@
 package main
 
 import "testing"
+//单元测试测试文件
+// go test -v monster_test.go monster.go
+
 
 func TestStore(t *testing.T){
 	monster := Monster{
