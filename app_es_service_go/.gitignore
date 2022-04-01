@@ -1,0 +1,10 @@
+/.idea/
+/.env*
+/storage/logs/*
+/storage/tmp/*
+!/storage/logs/.gitkeep
+!/storage/tmp/.gitkeep
+!/.env.example
+!/.env.docker
+e_demo
+eframe_demo
