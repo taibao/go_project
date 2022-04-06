@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/abs_go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_business_script_go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app_course_service_go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_es_service_go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_user_service_go" vcs="Git" />
