@@ -8,6 +8,7 @@
     <mapping directory="$PROJECT_DIR$/app_es_service_go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app_user_service_go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cuser-info-service" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/task_go" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/xiaoe_api_log_service" vcs="Git" />
   </component>

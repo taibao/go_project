@@ -4,6 +4,8 @@
     <list default="true" id="bea7ac3d-85bc-49bc-b85a-7eff12f5ddf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_business_script_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_business_script_go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_course_service_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" afterDir="false" />
@@ -74,18 +76,20 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app_business_script_go/script/logic/worker" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app_business_script_go/model" />
-      <recent name="$PROJECT_DIR$/app_business_script_go/component/resources" />
+      <recent name="$PROJECT_DIR$/app_business_script_go/script/logic/worker" />
       <recent name="$PROJECT_DIR$/app_business_script_go/component" />
       <recent name="$PROJECT_DIR$/app_business_script_go/script/logic/handle" />
-      <recent name="$PROJECT_DIR$/app_business_script_go/script/logic/worker" />
+      <recent name="$PROJECT_DIR$/app_business_script_go/component/LatestSubscribeToRedis" />
+      <recent name="$PROJECT_DIR$/app_course_service_go" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_business_script_go/component" />
+      <recent name="$PROJECT_DIR$/app_business_script_go/component/LatestSubscribeToRedis" />
       <recent name="$PROJECT_DIR$/app_business_script_go/component/resources" />
       <recent name="$PROJECT_DIR$/xiaoe_api_log_service/model" />
     </key>
@@ -144,14 +148,9 @@
       <screen x="0" y="25" width="1680" height="946" />
     </state>
     <state x="383" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.946@0.25.1680.946" timestamp="1641956046372" />
-    <state x="2432" y="47" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641288929610">
-      <screen x="1440" y="-375" width="2560" height="1440" />
-    </state>
-    <state x="2432" y="47" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1641288929610" />
     <state x="1541" y="-257" width="2361" height="1151" key="DiffContextDialog" timestamp="1641795431169">
       <screen x="1440" y="-350" width="2560" height="1336" />
     </state>
-    <state x="1540" y="-275" width="2360" height="1240" key="DiffContextDialog/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1640186419631" />
     <state x="1541" y="-257" width="2361" height="1151" key="DiffContextDialog/0.25.1440.875/1440.-350.2560.1336@1440.-350.2560.1336" timestamp="1641795431169" />
     <state x="66" y="92" width="1549" height="827" key="DiffContextDialog/0.25.1680.960@0.25.1680.960" timestamp="1641614919769" />
     <state x="69" y="25" key="MergeDialog" timestamp="1641894871078">
@@ -179,22 +178,20 @@
       <screen x="0" y="25" width="1680" height="946" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="VCS.FileHistoryDialog/0.25.1680.946@0.25.1680.946" timestamp="1642574288792" />
-    <state x="2509" y="266" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1640829177915">
-      <screen x="1440" y="-375" width="2560" height="1440" />
-    </state>
-    <state x="2509" y="266" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1640829177915" />
-    <state x="2519" y="-23" width="1073" height="697" key="find.popup" timestamp="1648885325448">
-      <screen x="1440" y="-350" width="2560" height="1341" />
+    <state x="708" y="257" width="705" height="496" key="find.popup" timestamp="1649951760714">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
     <state x="2029" y="114" width="1073" height="748" key="find.popup/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642666742027" />
     <state x="358" y="127" width="987" height="791" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1642575148192" />
-    <state x="2519" y="-5" width="1073" height="736" key="find.popup/0.25.1440.801/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1646982429181" />
+    <state x="2519" y="-5" width="1073" height="736" key="find.popup/0.25.1440.801/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1649818119454" />
     <state x="1986" y="-179" width="1504" height="1066" key="find.popup/0.25.1440.807/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641392768072" />
     <state x="2519" y="-23" width="1073" height="697" key="find.popup/0.25.1440.875/1440.-350.2560.1341@1440.-350.2560.1341" timestamp="1648885325448" />
     <state x="366" y="348" width="705" height="492" key="find.popup/0.25.1680.946@0.25.1680.946" timestamp="1641959227111" />
-    <state x="358" y="141" width="987" height="722" key="find.popup/0.25.1680.958@0.25.1680.958" timestamp="1641526097360" />
-    <state x="2210" y="-52" width="1021" height="866" key="search.everywhere.popup" timestamp="1646201550233">
-      <screen x="1440" y="-350" width="2560" height="1341" />
+    <state x="708" y="257" width="705" height="496" key="find.popup/0.25.1680.951@0.25.1680.951" timestamp="1649951760714" />
+    <state x="642" y="141" width="987" height="722" key="find.popup/0.25.1680.958@0.25.1680.958" timestamp="1649235219231" />
+    <state x="1079" y="352" width="1073" height="698" key="find.popup/0.25.2560.1341@0.25.2560.1341" timestamp="1649851446327" />
+    <state x="505" y="236" width="671" height="615" key="search.everywhere.popup" timestamp="1649952774915">
+      <screen x="0" y="25" width="1680" height="951" />
     </state>
     <state x="2210" y="-55" width="1021" height="929" key="search.everywhere.popup/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642662559668" />
     <state x="505" y="233" width="670" height="58" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1642411013593" />
@@ -202,6 +199,7 @@
     <state x="2210" y="-36" width="1021" height="915" key="search.everywhere.popup/0.25.1440.817/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641524502859" />
     <state x="2210" y="-54" width="1021" height="863" key="search.everywhere.popup/0.25.1440.875/1440.-350.2560.1336@1440.-350.2560.1336" timestamp="1641454335692" />
     <state x="2210" y="-52" width="1021" height="866" key="search.everywhere.popup/0.25.1440.875/1440.-350.2560.1341@1440.-350.2560.1341" timestamp="1646201550233" />
+    <state x="505" y="236" width="671" height="615" key="search.everywhere.popup/0.25.1680.951@0.25.1680.951" timestamp="1649952774915" />
     <state x="505" y="238" width="671" height="620" key="search.everywhere.popup/0.25.1680.958@0.25.1680.958" timestamp="1641526658403" />
   </component>
 </project>

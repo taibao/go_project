@@ -49,10 +49,6 @@ func GetShopInfo(ginCtx *gin.Context) {
 *获取全部店铺列表
 */
 func GetShopList(ginCtx *gin.Context) {
-
-
-
-
 	ginCtx.JSON(200, gin.H{
 		"code": 0,
 		"msg":  "OK",
