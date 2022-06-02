@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package api.myblog;
+
+option go_package = "myblog/api/myblog;myblog";
+option java_multiple_files = true;
+option java_package = "api.myblog";
+
+service Myblog {
+	rpc CreateMyblog (CreateMyblogRequest) returns (CreateMyblogReply);
+	rpc UpdateMyblog (UpdateMyblogRequest) returns (UpdateMyblogReply);
+	rpc DeleteMyblog (DeleteMyblogRequest) returns (DeleteMyblogReply);
+	rpc GetMyblog (GetMyblogRequest) returns (GetMyblogReply);
+	rpc ListMyblog (ListMyblogRequest) returns (ListMyblogReply);
+}
+
+message CreateMyblogRequest {}
+message CreateMyblogReply {}
+
+message UpdateMyblogRequest {}
+message UpdateMyblogReply {}
+
+message DeleteMyblogRequest {}
+message DeleteMyblogReply {}
+
+message GetMyblogRequest {}
+message GetMyblogReply {}
+
+message ListMyblogRequest {}
+message ListMyblogReply {}
