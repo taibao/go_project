@@ -9,10 +9,7 @@ import (
 func main(){
 	//fmt.Println(91/10)
 
-
 	//测试break
-
-
 	for i:=0; i<2; i++{
 		j:=0
 		for {

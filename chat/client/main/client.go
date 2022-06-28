@@ -19,12 +19,12 @@ func main(){
 	//接收用户的选择
 	var key int
 
-	for true{
 		fmt.Println("------------欢迎登录多人聊天系统--------------")
 		fmt.Println("------------1：登录聊天室--------------")
 		fmt.Println("------------2：注册用户--------------")
 		fmt.Println("------------3：退出系统--------------")
 		fmt.Println("------------4：请选择（1-3）--------------")
+		for true{
 
 		fmt.Scanf("%d\n",&key)
 		switch key {
