@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bea7ac3d-85bc-49bc-b85a-7eff12f5ddf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/errors/err_sync/err_sync.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/main/limit.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/main/once.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/main/sysc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/main/tracker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/main/wait.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/errors/wait/waitgroup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go_base/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go_base/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go_base/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go_base/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go_base/main/timeout.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testDemo/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_user_service_go/service/conf_hub.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_course_service_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_course_service_go/http/controller/question_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go/http/controller/question_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_course_service_go/repository/resources/alive_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go/repository/resources/alive_repo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_course_service_go/service/course_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go/service/course_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_course_service_go/service/resources/alive_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go/service/resources/alive_service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" afterDir="false" />
@@ -26,15 +15,15 @@
       <change beforePath="$PROJECT_DIR$/app_es_service_go/repository/app_conf_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/repository/app_conf_repo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/service/shop_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/service/shop_service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_go/service/conf_hub.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go/service/conf_hub.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_go/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_user_service_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_user_service_go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cuser-info-service" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cuser-info-service/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/.env.local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cuser-info-service/cuser-info-service" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/cuser-info-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuser-info-service/script/build.bat" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/script/build.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuser-info-service/script/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/script/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuser-info-service/script/swagger.bat" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/script/swagger.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuser-info-service/script/swagger.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/script/swagger.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/errors/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDemo/main/yunsuna.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos" beforeDir="false" afterPath="$PROJECT_DIR$/kratos" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kratos/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/cmd/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/cmd/app.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/component/phone_suscribe_consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/component/phone_suscribe_consumer.go" afterDir="false" />
@@ -161,66 +150,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="187" key="#Inspections" timestamp="1642575395543">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2097" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1656914691777">
+      <screen x="1440" y="-350" width="2560" height="1415" />
     </state>
-    <state x="440" y="187" key="#Inspections/0.0.1680.1050@0.0.1680.1050" timestamp="1642575395543" />
-    <state x="383" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641956046372">
-      <screen x="0" y="25" width="1680" height="946" />
+    <state x="2097" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.801/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1656914691777" />
+    <state x="2536" y="11" key="RollbackChangesDialog" timestamp="1657014075426">
+      <screen x="1440" y="-350" width="2560" height="1415" />
     </state>
-    <state x="383" y="117" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.946@0.25.1680.946" timestamp="1641956046372" />
-    <state x="1541" y="-257" width="2361" height="1151" key="DiffContextDialog" timestamp="1641795431169">
-      <screen x="1440" y="-350" width="2560" height="1336" />
+    <state x="2536" y="11" key="RollbackChangesDialog/0.25.1440.799/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1657014075426" />
+    <state x="2519" y="-5" width="1073" height="736" key="find.popup" timestamp="1657012621550">
+      <screen x="1440" y="-350" width="2560" height="1415" />
     </state>
-    <state x="1541" y="-257" width="2361" height="1151" key="DiffContextDialog/0.25.1440.875/1440.-350.2560.1336@1440.-350.2560.1336" timestamp="1641795431169" />
-    <state x="66" y="92" width="1549" height="827" key="DiffContextDialog/0.25.1680.960@0.25.1680.960" timestamp="1641614919769" />
-    <state x="69" y="25" key="MergeDialog" timestamp="1641894871078">
-      <screen x="0" y="25" width="1680" height="947" />
-    </state>
-    <state x="69" y="25" key="MergeDialog/0.25.1680.947@0.25.1680.947" timestamp="1641894871078" />
-    <state x="353" y="414" key="MultipleFileMergeDialog" timestamp="1641901509302">
-      <screen x="0" y="25" width="1680" height="951" />
-    </state>
-    <state x="353" y="412" key="MultipleFileMergeDialog/0.25.1680.947@0.25.1680.947" timestamp="1641894871204" />
-    <state x="353" y="414" key="MultipleFileMergeDialog/0.25.1680.951@0.25.1680.951" timestamp="1641901509302" />
-    <state x="2814" y="-89" key="RollbackChangesDialog" timestamp="1646214563994">
-      <screen x="1440" y="-350" width="2560" height="1341" />
-    </state>
-    <state x="2814" y="-95" key="RollbackChangesDialog/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642648862376" />
-    <state x="902" y="204" key="RollbackChangesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1642678707838" />
-    <state x="2814" y="-89" key="RollbackChangesDialog/0.25.1440.875/1440.-350.2560.1341@1440.-350.2560.1341" timestamp="1646214563994" />
-    <state x="902" y="209" key="RollbackChangesDialog/0.25.1680.946@0.25.1680.946" timestamp="1641960897782" />
-    <state x="902" y="212" key="RollbackChangesDialog/0.25.1680.960@0.25.1680.960" timestamp="1641614443676" />
-    <state width="590" height="445" key="SwitcherDM" timestamp="1642663178371">
-      <screen x="1440" y="-375" width="2560" height="1440" />
-    </state>
-    <state width="590" height="445" key="SwitcherDM/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642663178371" />
-    <state x="100" y="100" width="1480" height="850" key="VCS.FileHistoryDialog" timestamp="1642574288792">
-      <screen x="0" y="25" width="1680" height="946" />
-    </state>
-    <state x="100" y="100" width="1480" height="850" key="VCS.FileHistoryDialog/0.25.1680.946@0.25.1680.946" timestamp="1642574288792" />
-    <state x="708" y="257" width="705" height="496" key="find.popup" timestamp="1649951760714">
-      <screen x="0" y="25" width="1680" height="951" />
-    </state>
-    <state x="2029" y="114" width="1073" height="748" key="find.popup/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642666742027" />
-    <state x="358" y="127" width="987" height="791" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1642575148192" />
-    <state x="2519" y="-5" width="1073" height="736" key="find.popup/0.25.1440.801/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1649818119454" />
-    <state x="1986" y="-179" width="1504" height="1066" key="find.popup/0.25.1440.807/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641392768072" />
+    <state x="2519" y="-5" width="1073" height="736" key="find.popup/0.25.1440.801/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1657012621550" />
     <state x="2519" y="-23" width="1073" height="697" key="find.popup/0.25.1440.875/1440.-350.2560.1341@1440.-350.2560.1341" timestamp="1648885325448" />
-    <state x="366" y="348" width="705" height="492" key="find.popup/0.25.1680.946@0.25.1680.946" timestamp="1641959227111" />
     <state x="708" y="257" width="705" height="496" key="find.popup/0.25.1680.951@0.25.1680.951" timestamp="1649951760714" />
     <state x="642" y="141" width="987" height="722" key="find.popup/0.25.1680.958@0.25.1680.958" timestamp="1649235219231" />
     <state x="1079" y="352" width="1073" height="698" key="find.popup/0.25.2560.1341@0.25.2560.1341" timestamp="1649851446327" />
     <state x="505" y="236" width="671" height="615" key="search.everywhere.popup" timestamp="1649952774915">
       <screen x="0" y="25" width="1680" height="951" />
     </state>
-    <state x="2210" y="-55" width="1021" height="929" key="search.everywhere.popup/0.0.1440.900/1440.-375.2560.1440@1440.-375.2560.1440" timestamp="1642662559668" />
-    <state x="505" y="233" width="670" height="58" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1642411013593" />
-    <state x="2210" y="-36" width="1021" height="913" key="search.everywhere.popup/0.25.1440.809/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641545953894" />
-    <state x="2210" y="-36" width="1021" height="915" key="search.everywhere.popup/0.25.1440.817/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1641524502859" />
-    <state x="2210" y="-54" width="1021" height="863" key="search.everywhere.popup/0.25.1440.875/1440.-350.2560.1336@1440.-350.2560.1336" timestamp="1641454335692" />
-    <state x="2210" y="-52" width="1021" height="866" key="search.everywhere.popup/0.25.1440.875/1440.-350.2560.1341@1440.-350.2560.1341" timestamp="1646201550233" />
     <state x="505" y="236" width="671" height="615" key="search.everywhere.popup/0.25.1680.951@0.25.1680.951" timestamp="1649952774915" />
-    <state x="505" y="238" width="671" height="620" key="search.everywhere.popup/0.25.1680.958@0.25.1680.958" timestamp="1641526658403" />
   </component>
 </project>
