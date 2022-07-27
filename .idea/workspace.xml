@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bea7ac3d-85bc-49bc-b85a-7eff12f5ddf8" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/app_user_service_go/service/conf_hub.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_course_service_go/repository/resources/alive_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go/repository/resources/alive_repo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_course_service_go/service/course_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go/service/course_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_course_service_go/service/resources/alive_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_course_service_go/service/resources/alive_service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" afterDir="false" />
@@ -19,8 +14,6 @@
       <change beforePath="$PROJECT_DIR$/app_go/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go/service/service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_user_service_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_user_service_go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cuser-info-service" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuser-info-service/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/.env.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuser-info-service/cuser-info-service" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service/cuser-info-service" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kratos" beforeDir="false" afterPath="$PROJECT_DIR$/kratos" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kratos/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kratos/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/go.sum" afterDir="false" />
@@ -53,7 +46,7 @@
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app_course_service_go" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
