@@ -52,8 +52,14 @@ func main(){
 	//fmt.Println(fbn(10))
 
 	//求字符串后两位
-	str := "13966867114"
-	fmt.Println(str[len(str)-2:])
+	//str := "13966867114"
+	//fmt.Println(str[len(str)-2:])
+
+	a := []interface{}{1,2,3,4}
+	for k,_ := range a{
+		a[k] = 1
+	}
+	fmt.Println(a)
 
 }
 
