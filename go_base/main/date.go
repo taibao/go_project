@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "fmt"
 
 //时间和日期相关函数
 func main(){
@@ -59,16 +56,18 @@ func main(){
 	//time.Sleep(1000 * time.Millisecond)
 	//fmt.Println("我等了100毫秒")
 
-	i:=0
-	sleepTime := time.Duration(200)
-	for {
-		i++
-		fmt.Println(i)
-		time.Sleep(time.Millisecond * sleepTime)
-		if i==10 {
-			break
-		}
-	}
+	//i:=0
+	//sleepTime := time.Duration(200)
+	//for {
+	//	i++
+	//	fmt.Println(i)
+	//	time.Sleep(time.Millisecond * sleepTime)
+	//	if i==10 {
+	//		break
+	//	}
+	//}
+
+	//fmt.Println("当前时间", time.Now().Format("2006-01-02 15:04:05"))
 
 //unix和unixNano的使用
 //fmt.Printf("unix时间戳=%v unixnano时间戳=%v",now.Unix(),now.UnixNano())
@@ -85,6 +84,11 @@ func main(){
 	//fmt.Println(id)
 
 
+	arr := []interface{}{1,2,3,}
+	DeleteArr(&arr,1)
+	fmt.Println("输出类型",arr)
+
+
 }
 //func test03(){
 //	str := "bigworld"
@@ -94,4 +98,8 @@ func main(){
 //}
 
 
+
+func DeleteArr(seq *[]interface{}, index int){
+	*seq = append((*seq)[:index], (*seq)[index+1:]...) //后面三个点有解序列作用，把第二个数组的元素拿出来append到前一个数组中， 不然就塞了一个数组到前一个数组中了
+}
 
