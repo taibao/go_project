@@ -12,27 +12,25 @@ func main(){
 	input.Scan()
 	str := input.Text()
 
-	var arr []string
+	var arr []int
 
-	for _,v := range str{
-		if !inArr(arr,string(v)){
-			fmt.Print(string(v))
-		}else{
-			arr = append(arr,string(v))
+	for i:=len(str)-1;i>=0;i--{
+		if !inArr(arr,int(str[i])){
+			arr = append(arr,int(str[i]))
 		}
+	}
+	for _,v:=range arr{
+		fmt.Print(string(v))
 	}
 	fmt.Println()
 }
 
-func inArr(arr []string, value string) bool{
-	fmt.Println(arr)
+func inArr(arr []int, value int) bool{
 	var isInArr = false
 	for _,v:=range arr{
 		if v==value{
 			isInArr = true
 		}
 	}
-
-	fmt.Println(isInArr)
 	return isInArr
 }
