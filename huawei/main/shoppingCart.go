@@ -95,7 +95,6 @@ func DpCost(cost, price [][]int, money int)  {
 		}
 
 	}
-
 	//取package最后一行的记录即可
 	max := 0
 	for i := money; i >= 0; i-- {
