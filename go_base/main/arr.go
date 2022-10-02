@@ -1,12 +1,45 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
-	"os"
+	"net/url"
+	"strings"
 )
 
+func HttpBuildQuery(params map[string]string) (param_str string) {
+	params_arr := make([]string, 0, len(params))
+	for k, v := range params {
+		params_arr = append(params_arr, fmt.Sprintf("%s=%s", k, v))
+	}
+	//fmt.Println(params_arr)
+	param_str = strings.Join(params_arr, "&")
+	return param_str
+}
+
+
+
+
 func main() {
+
+	//str := map[string][]string{"first": {"value"}, "multi": {"foo bar", "baz"}}
+
+	//decodeStr = HttpBuildQuery(str)
+
+
+	arr := map[string]interface{}{
+		"app_id":"",
+
+	}
+
+	var uri url.URL
+	q := uri.Query()
+	q.Add("name", "张三")
+	q.Add("age", "20")
+	q.Add("sex", "1")
+	q.Add("wew","1232")
+	queryStr := q.Encode()
+	fmt.Println(queryStr)
+
 	//fmt.Println(91/10)
 
 	//测试break
@@ -22,15 +55,15 @@ func main() {
 	//}
 
 
-	jsons := `["1：修复直播黑屏，app闪退","2：优化ui"]`
-	var msg  []string
-	err := json.Unmarshal([]byte(jsons), &msg)
-
-	fmt.Println(msg , err)
-
-
-
-	os.Exit(1)
+	//jsons := `["1：修复直播黑屏，app闪退","2：优化ui"]`
+	//var msg  []string
+	//err := json.Unmarshal([]byte(jsons), &msg)
+	//
+	//fmt.Println(msg , err)
+	//
+	//
+	//
+	//os.Exit(1)
 	//使用数组求平均
 	//
 	//var hens [6]float64 //定义数组

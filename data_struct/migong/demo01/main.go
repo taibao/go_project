@@ -4,17 +4,16 @@ import (
 )
 
 func test(n int) {
-	if n > 2 {
-		n-- // 死龟
+	if n > 1 {
+		n-- //递归
 		test(n)
-	} else {
-		fmt.Println("n=", n)
+	}else{
+		return
 	}
-	
+	fmt.Println("n=",n)
 }
 
 func main() {
-
-	n := 4
+	n := 6
 	test(n)
 }
