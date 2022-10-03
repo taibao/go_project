@@ -44,6 +44,7 @@ func main() {
 			cost = append(cost, cost[1] + cost[2] - cost[0])
 			price = append(price, price[1] + price[2] - price[0])
 		}
+
 		costs = append(costs, cost)
 		prices = append(prices, price)
 	}
