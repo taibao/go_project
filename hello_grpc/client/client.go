@@ -18,7 +18,7 @@ func main(){
 	// 新建一个客户端
 	c := service.NewGreeterClient(conn)
 	// 调用服务端函数
-	r, err := c.SayHello(context.Background(), &service.HelloRequest{Name: "horika"})
+	r, err := c.SayHello(context.Background(), &service.HelloRequest{Name: "vitas"})
 	if err != nil {
 		fmt.Printf("调用服务端代码失败: %s", err)
 		return
