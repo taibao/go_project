@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"net/url"
 	"strings"
 )
 
@@ -20,25 +19,24 @@ func HttpBuildQuery(params map[string]string) (param_str string) {
 
 
 func main() {
-
 	//str := map[string][]string{"first": {"value"}, "multi": {"foo bar", "baz"}}
-
 	//decodeStr = HttpBuildQuery(str)
 
-
-	arr := map[string]interface{}{
-		"app_id":"",
-
-	}
-
-	var uri url.URL
-	q := uri.Query()
-	q.Add("name", "张三")
-	q.Add("age", "20")
-	q.Add("sex", "1")
-	q.Add("wew","1232")
-	queryStr := q.Encode()
-	fmt.Println(queryStr)
+	str :="eyJhcHBfaWQiOiJhcHBvdnlqdm5leTI2MDEiLCJkYXRhIjp7Ind4X3VuaW9uX2lkIjoib1RIVzV2NmFnZzFiOGh4M1Z5YkM5V21VM3dhOCIsInd4X25pY2tuYW1lIjoi5Y2T5ZiJ5a6+Iiwid3hfYXZhdGFyIjoiaHR0cHM6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi92aV8zMi9RMGo0VHdHVGZUSlJ2RFZUekRMNlZBaWEyRUtFd09Xd1o1NDJ5STM2QTdjb2hGbVBrYXJlRXY2Z01IOHZnOTl5aWFGdHNRM2liemZqMnd5OVpEUUxMRWJBQS8xMzIifX0="
+	fmt.Println(string([]byte(str)))
+	//arr := map[string]interface{}{
+	//	"app_id":"",
+	//
+	//}
+	//
+	//var uri url.URL
+	//q := uri.Query()
+	//q.Add("name", "张三")
+	//q.Add("age", "20")
+	//q.Add("sex", "1")
+	//q.Add("wew","1232")
+	//queryStr := q.Encode()
+	//fmt.Println(queryStr)
 
 	//fmt.Println(91/10)
 
