@@ -8,6 +8,7 @@ import (
 	"net"
 	service "test_grpc/service"
 )
+//简单模式
 
 type server struct {}
 func (s *server) SayHello(ctx context.Context, in *service.HelloRequest) (*service.HelloReply, error) {
