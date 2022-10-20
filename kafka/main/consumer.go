@@ -13,8 +13,8 @@ var (
 )
 
 func main() {
-
-	consumer, err := sarama.NewConsumer(strings.Split("42.194.149.38:9092", ","), nil)
+	//app_apm_server
+	consumer, err := sarama.NewConsumer(strings.Split("10.10.42.114:9092", ","), nil)
 	if err != nil {
 		fmt.Println("Failed to start consumer: %s", err)
 		return
@@ -26,7 +26,7 @@ func main() {
 	}
 	fmt.Println(partitionList)
 	for partition := range partitionList {
-		pc, err := consumer.ConsumePartition("subscribe_app", int32(partition), sarama.OffsetOldest)
+		pc, err := consumer.ConsumePartition("app_apm_server", int32(partition), sarama.OffsetOldest)
 		if err != nil {
 			fmt.Printf("Failed to start consumer for partition %d: %s\n", partition, err)
 			return

@@ -16,32 +16,14 @@ func main() {
 	config.Producer.Return.Successes = true
 
 	//client, err := sarama.NewSyncProducer([]string{"192.168.1.8:9092"}, config)
-	client, err := sarama.NewSyncProducer([]string{"10.10.13.224:9092"}, config)
+	client, err := sarama.NewSyncProducer([]string{"10.10.42.114:9092"}, config)
 	if err != nil {
 		fmt.Println("producer close, err:", err)
 		return
 	}
 	defer client.Close()
 	for {
-		//sendMsg(client,"t_image_text")
-		//sendMsg(client,"t_audio")
-		//sendMsg(client,"t_video_2")
-		//sendMsg(client,"alive_data_change")
-		//sendMsg(client,"t_ebook")
-		//sendMsg(client,"t_pay_products")
-		//sendMsg(client,"t_term")
-		//sendMsg(client,"t_interaction")
-		//sendMsg(client,"t_activity")
-		//sendMsg(client,"t_clock_work")
-		//sendMsg(client,"t_community")
-		//sendMsg(client,"t_course_offline")
-		//sendMsg(client,"t_examination")
-		//sendMsg(client,"t_exercises")
-		//sendMsg(client,"t_forms")
-		//sendMsg(client,"t_practice")
-		//sendMsg(client,"t_que_question")
-
-		sendMsg(client,"mysql2es_t_course")
+		sendMsg(client,"app_apm_server")
 	}
 }
 
@@ -56,7 +38,9 @@ func sendMsg(client sarama.SyncProducer,topic_name string){
 	//union订阅 +U
 	//str := `{"data":{"id":500001,"app_id":"apppcHqlTPT3482","content_app_id":"","resource_id":"i_5f51a0a360b266ca4e9b9269","user_id":"u_5f55092de60b4_WYNlXe8eKe","universal_union_id":"ozStBt1BVbbkIJBfsjUV5sfIJ-1I","status":1,"resource_type":1,"created_at":"2020-09-07 18:35:43","updated_at":"2020-09-07 18:35:43"},"op":"+U"}`
 
-	str := `{"data":{"id":7952,"shop_id":"appjXbh1T3A5945","course_id":"course_28bBsT00G3ufh5RVdKJ7UuCGcc3","title":"新建训练营pro2022-05-02 15:13:05","summary":"新建训练营pro","img_url":"https://wechatapppro-1252524126.file.myqcloud.com/appjXbh1T3A5945/image/b_u_5bf76183e88e8_s62XrQSB/kmlh0nij090m.png","img_url_compressed":"https://wechatapppro-1252524126.file.myqcloud.com/appjXbh1T3A5945/image/b_u_5bf76183e88e8_s62XrQSB/kmlh0nij090m.png","img_url_compressed_larger":"https://wechatapppro-1252524126.file.myqcloud.com/appjXbh1T3A5945/image/b_u_5bf76183e88e8_s62XrQSB/kmlh0nij090m.png","created_at":"2022-05-02 15:13:31","updated_at":"2022-05-02 15:13:31"},"op":"+I"}`
+	//str := `{"data":{"id":7952,"shop_id":"appjXbh1T3A5945","course_id":"course_28bBsT00G3ufh5RVdKJ7UuCGcc3","title":"新建训练营pro2022-05-02 15:13:05","summary":"新建训练营pro","img_url":"https://wechatapppro-1252524126.file.myqcloud.com/appjXbh1T3A5945/image/b_u_5bf76183e88e8_s62XrQSB/kmlh0nij090m.png","img_url_compressed":"https://wechatapppro-1252524126.file.myqcloud.com/appjXbh1T3A5945/image/b_u_5bf76183e88e8_s62XrQSB/kmlh0nij090m.png","img_url_compressed_larger":"https://wechatapppro-1252524126.file.myqcloud.com/appjXbh1T3A5945/image/b_u_5bf76183e88e8_s62XrQSB/kmlh0nij090m.png","created_at":"2022-05-02 15:13:31","updated_at":"2022-05-02 15:13:31"},"op":"+I"}`
+
+	str := `{"token":"935595909a3f876cd4ecc5ed74db8a2c","time_stamp":111212122,"b_user_id":"b_u_5fd87d4f12eb9_og9m7CMS","app_id":"appgKvmP9gT7183","phone_name":"","event":"stuck","duration":3,"platform":"ios","play_session":{"stuck_count":3,"stuck_time":3,"error_code":0,"error_code_name":"stuck","app_cpu_avg":20.0,"sys_cpu_avg ":30.0,"extras":"{\"seesion_id\":\"werwerwerwe\"}"},"download_session":{"success":true,"speed_avg":20.2,"app_cpu_avg":20.0,"sys_cpu_avg":20.0,"extras":"{\"seesion_id\":\"werwerwerwe\"}"},"cast_screen_session":{"success":true,"type":0,"extras":"{\"seesion_id\":\"werwerwerwe\"}"},"client_info":{"batteryLevel":"1.0","deviceName":"\u5c0f\u4e25\u7684\u5b66\u4e60\u5c0f\u9a6c\u8fbe","phoneBrand":"iPadOS","phoneModel":"iPad (9th generation)","systemVersion":"15.3.1"}}`
 	msg.Value = sarama.StringEncoder(str)
 	pid, offset, err := client.SendMessage(msg)
 	if err != nil {
