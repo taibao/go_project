@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 //时间和日期相关函数
 func main(){
@@ -83,13 +86,23 @@ func main(){
 	//
 	//fmt.Println(id)
 
+	//
+	//arr := []interface{}{1,2,3,}
+	//DeleteArr(&arr,1)
+	//fmt.Println("输出类型",arr)
 
-	arr := []interface{}{1,2,3,}
-	DeleteArr(&arr,1)
-	fmt.Println("输出类型",arr)
-
+	fmt.Println(GetDateV3("2022-10-31 15:08:53.000"))
 
 }
+
+func GetDateV3(dateStr string) string{
+	currentTime, _ := time.Parse("2006-01-02 15:04:05.000", dateStr)
+	t, _ := time.ParseDuration("-8h")
+	result := currentTime.Add(t)
+	return result.Format("2006-01-02 15:04:05.000000000")
+}
+
+
 //func test03(){
 //	str := "bigworld"
 //	for i:=0;i<100;i++{

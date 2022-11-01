@@ -3,7 +3,17 @@ package main
 import (
 	"fmt"
 	"strings"
+	"time"
 )
+
+func GetMinutesAgo() string{
+	currentTime := time.Now()
+	t, _ := time.ParseDuration("-8h")
+	result := currentTime.Add(t)
+	return result.Format("2006-01-02 15:04:05.000000000")
+}
+
+
 
 func HttpBuildQuery(params map[string]string) (param_str string) {
 	params_arr := make([]string, 0, len(params))
@@ -16,14 +26,15 @@ func HttpBuildQuery(params map[string]string) (param_str string) {
 }
 
 
-
-
 func main() {
+
+	fmt.Println(GetMinutesAgo())
+
 	//str := map[string][]string{"first": {"value"}, "multi": {"foo bar", "baz"}}
 	//decodeStr = HttpBuildQuery(str)
 
-	str :="eyJhcHBfaWQiOiJhcHBvdnlqdm5leTI2MDEiLCJkYXRhIjp7Ind4X3VuaW9uX2lkIjoib1RIVzV2NmFnZzFiOGh4M1Z5YkM5V21VM3dhOCIsInd4X25pY2tuYW1lIjoi5Y2T5ZiJ5a6+Iiwid3hfYXZhdGFyIjoiaHR0cHM6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi92aV8zMi9RMGo0VHdHVGZUSlJ2RFZUekRMNlZBaWEyRUtFd09Xd1o1NDJ5STM2QTdjb2hGbVBrYXJlRXY2Z01IOHZnOTl5aWFGdHNRM2liemZqMnd5OVpEUUxMRWJBQS8xMzIifX0="
-	fmt.Println(string([]byte(str)))
+	//str :="eyJhcHBfaWQiOiJhcHBvdnlqdm5leTI2MDEiLCJkYXRhIjp7Ind4X3VuaW9uX2lkIjoib1RIVzV2NmFnZzFiOGh4M1Z5YkM5V21VM3dhOCIsInd4X25pY2tuYW1lIjoi5Y2T5ZiJ5a6+Iiwid3hfYXZhdGFyIjoiaHR0cHM6Ly90aGlyZHd4LnFsb2dvLmNuL21tb3Blbi92aV8zMi9RMGo0VHdHVGZUSlJ2RFZUekRMNlZBaWEyRUtFd09Xd1o1NDJ5STM2QTdjb2hGbVBrYXJlRXY2Z01IOHZnOTl5aWFGdHNRM2liemZqMnd5OVpEUUxMRWJBQS8xMzIifX0="
+	//fmt.Println(string([]byte(str)))
 	//arr := map[string]interface{}{
 	//	"app_id":"",
 	//
