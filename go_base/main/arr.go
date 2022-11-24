@@ -6,14 +6,22 @@ import (
 	"time"
 )
 
-func GetMinutesAgo() string{
+func GetMinutesAgo() string {
 	currentTime := time.Now()
 	t, _ := time.ParseDuration("-8h")
 	result := currentTime.Add(t)
 	return result.Format("2006-01-02 15:04:05.000000000")
 }
 
-
+func GetDateV4(goBack string) string {
+	currentTime := time.Now()
+	if goBack != "" {
+		t, _ := time.ParseDuration(goBack)
+		result := currentTime.Add(t)
+		return result.Format("2006-01-02 00:00:00")
+	}
+	return currentTime.Format("2006-01-02 00:00:00")
+}
 
 func HttpBuildQuery(params map[string]string) (param_str string) {
 	params_arr := make([]string, 0, len(params))
@@ -24,7 +32,6 @@ func HttpBuildQuery(params map[string]string) (param_str string) {
 	param_str = strings.Join(params_arr, "&")
 	return param_str
 }
-
 
 func main() {
 
@@ -62,7 +69,6 @@ func main() {
 	//		fmt.Println("第", i, "列")
 	//	}
 	//}
-
 
 	//jsons := `["1：修复直播黑屏，app闪退","2：优化ui"]`
 	//var msg  []string
@@ -225,6 +231,5 @@ func main() {
 	//	return
 	//}
 	//
-
 
 }
