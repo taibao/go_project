@@ -16,14 +16,14 @@ func main() {
 	config.Producer.Return.Successes = true
 
 	//client, err := sarama.NewSyncProducer([]string{"192.168.1.8:9092"}, config)
-	client, err := sarama.NewSyncProducer([]string{"10.10.42.114:9092"}, config)
+	client, err := sarama.NewSyncProducer([]string{"10.10.43.160:9092"}, config)
 	if err != nil {
 		fmt.Println("producer close, err:", err)
 		return
 	}
 	defer client.Close()
 	for {
-		sendMsg(client, "app_apm_server")
+		sendMsg(client, "channel_xiaoe_app_msg")
 	}
 }
 
