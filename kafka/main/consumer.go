@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/Shopify/sarama"
+	"go_project/github.com/Shopify/sarama"
 	"strings"
 	"sync"
 	"time"
@@ -42,7 +42,7 @@ func main() {
 			wg.Done()
 		}(pc)
 	}
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 	wg.Wait()
 	consumer.Close()
 }
