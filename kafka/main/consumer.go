@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go_project/github.com/Shopify/sarama"
+	"github.com/Shopify/sarama"
 	"strings"
 	"sync"
 	"time"
@@ -14,7 +14,7 @@ var (
 
 func main() {
 	//app_apm_server
-	consumer, err := sarama.NewConsumer(strings.Split("10.10.43.160:9092", ","), nil)
+	consumer, err := sarama.NewConsumer(strings.Split("10.10.27.147:9092", ","), nil)
 	if err != nil {
 		fmt.Println("Failed to start consumer: %s", err)
 		return
@@ -26,7 +26,7 @@ func main() {
 	}
 	fmt.Println(partitionList)
 	for partition := range partitionList {
-		pc, err := consumer.ConsumePartition("channel_xiaoe_app_msg_consumer_app_script_gray1", int32(partition), sarama.OffsetOldest)
+		pc, err := consumer.ConsumePartition("t_examination", int32(partition), sarama.OffsetOldest)
 		if err != nil {
 			fmt.Printf("Failed to start consumer for partition %d: %s\n", partition, err)
 			return
