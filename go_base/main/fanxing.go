@@ -12,6 +12,17 @@ func toSlice[T any](args ...T) []T {
 //	//
 //}
 
+type Stack[T any] struct {
+	data []T
+}
+
+// 入栈
+func (s *Stack[T]) Push(x T) {
+	s.data = append(s.data, x)
+}
+
+//出栈
+
 func main() {
 	strings := toSlice("hello", "world")
 	fmt.Println("strings", strings)
