@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-19004cc2]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.drag-box[data-v-19004cc2] {
+  width: 100%;
+  position: relative;
+}
+.drag-box .drag-item[data-v-19004cc2] {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1;
+  border-bottom: 0.01rem solid #F5F5F5;
+  position: absolute;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  height: 0.96rem;
+  border-radius: 0.16rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.drag-box .drag-item .drag-content[data-v-19004cc2] {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.drag-box .drag-item .drag-icon[data-v-19004cc2] {
+  margin-left: 0.08rem;
+  width: 22px;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.drag-box .dragging-item[data-v-19004cc2] {
+  transition: all 0.5s;
+}
+.drag-active[data-v-19004cc2] {
+  box-shadow: 0 8px 20px 0 #e6e6e6;
+  transform: scale(1.1);
+  z-index: 9 !important;
+  transition: box-shadow 0.5s, transform 0.5s, top 0s !important;
+}
+.drag-operate-right[data-v-19004cc2] {
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}

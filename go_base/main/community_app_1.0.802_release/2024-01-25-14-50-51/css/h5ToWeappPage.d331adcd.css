@@ -1,0 +1,418 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-0674f62e]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.to-app-right-top[data-v-0674f62e] {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  z-index: 99;
+}
+.for-moment[data-v-0674f62e] {
+  width: 264px;
+  height: 0.8rem;
+  overflow: hidden;
+}
+.fill-screen__button[data-v-0674f62e] {
+  border-radius: 0.4rem;
+  background-color: var(--xe-color-primary);
+  padding-left: 0;
+  padding-right: 0;
+  outline: none;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.jump-community-wx-open[data-v-0674f62e] {
+  width: 5rem;
+}
+.to-app-img-box[data-v-0674f62e] {
+  height: 190px;
+  width: 100%;
+}
+.to-app-img[data-v-0674f62e] {
+  width: 100%;
+  transform: translateY(-80px);
+}
+.to-app-img-lrcommunity[data-v-0674f62e] {
+  width: 100%;
+  transform: translateY(-40px);
+}
+.to-app-text-box[data-v-0674f62e] {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.to-app-text[data-v-0674f62e] {
+  height: 48px;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+  width: 100%;
+  font-weight: 600;
+}
+.to-app-btn[data-v-0674f62e] {
+  margin: 16px 0;
+  padding: 0px 32px;
+}
+.to-app-text-weight[data-v-0674f62e] {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: -32px;
+}
+.to-app-flex[data-v-0674f62e] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[data-v-0674f62e] .van-overlay {
+  z-index: 998 !important;
+}
+.jump-weapp-root[data-v-0674f62e] .van-dialog {
+  overflow: unset;
+}
+.for-moment[data-v-0674f62e] {
+  width: 264px;
+  height: 0.8rem;
+  overflow: hidden;
+}
+.fill-screen[data-v-0674f62e] {
+  background-color: black;
+  position: fixed;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.fill-screen__button[data-v-0674f62e] {
+  border-radius: 0.4rem;
+  background-color: var(--xe-color-primary);
+  padding-left: 0;
+  padding-right: 0;
+  outline: none;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.jump-community-wx-open[data-v-0674f62e] {
+  width: 5rem;
+}
+.fill-screen[data-v-0674f62e] {
+  background-color: black;
+  position: fixed;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.force-guide__dialog[data-v-0674f62e] {
+  width: 288px;
+  height: 366px;
+  background: #ffffff;
+  border-radius: 7.2px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 10000;
+}
+.entry-text[data-v-0674f62e] {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "PingFang SC";
+  text-align: left;
+  line-height: 20px;
+}
+.entry-tip-text[data-v-0674f62e] {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PingFang SC";
+  text-align: left;
+  line-height: 20px;
+  margin: 8px 0px;
+}
+.entry-wrapper[data-v-0674f62e] {
+  padding: 0px 24px;
+}
+.entry-num[data-v-0674f62e] {
+  display: inline-block;
+  transform: translateY(-1px);
+}
+.private-messages-tip[data-v-0674f62e] {
+  width: 100%;
+  margin-top: 12px;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-19bb26c5]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.to-app-right-top[data-v-19bb26c5] {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  z-index: 99;
+}
+.for-moment[data-v-19bb26c5] {
+  width: 264px;
+  height: 0.8rem;
+  overflow: hidden;
+}
+.fill-screen__button[data-v-19bb26c5] {
+  border-radius: 0.4rem;
+  background-color: var(--xe-color-primary);
+  padding-left: 0;
+  padding-right: 0;
+  outline: none;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.jump-community-wx-open[data-v-19bb26c5] {
+  width: 5rem;
+}
+.to-app-img-box[data-v-19bb26c5] {
+  height: 162px;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  overflow: hidden;
+}
+.to-app-text-box[data-v-19bb26c5] {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.to-app-text[data-v-19bb26c5] {
+  height: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  width: 100%;
+  font-weight: 600;
+}
+.to-app-btn[data-v-19bb26c5] {
+  margin: 16px 0;
+  padding: 0px 32px;
+}
+.to-app-text-weight[data-v-19bb26c5] {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+}
+.to-app-flex[data-v-19bb26c5] {
+  margin: 24px 0 16px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[data-v-19bb26c5] .van-overlay {
+  z-index: 998 !important;
+}
+.jump-weapp-root[data-v-19bb26c5] .van-dialog {
+  overflow: unset;
+}
+.for-moment[data-v-19bb26c5] {
+  width: 264px;
+  height: 0.8rem;
+  overflow: hidden;
+}
+.fill-screen[data-v-19bb26c5] {
+  background-color: black;
+  position: fixed;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.fill-screen__button[data-v-19bb26c5] {
+  border-radius: 0.4rem;
+  background-color: var(--xe-color-primary);
+  padding-left: 0;
+  padding-right: 0;
+  outline: none;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.jump-community-wx-open[data-v-19bb26c5] {
+  width: 5rem;
+}
+.fill-screen[data-v-19bb26c5] {
+  background-color: black;
+  position: fixed;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.force-guide__dialog[data-v-19bb26c5] {
+  width: 288px;
+  height: 366px;
+  background: #ffffff;
+  border-radius: 7.2px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 10000;
+}
+.entry-text[data-v-19bb26c5] {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "PingFang SC";
+  text-align: left;
+  line-height: 20px;
+}
+.entry-tip-text[data-v-19bb26c5] {
+  display: flex;
+  align-items: center;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "PingFang SC";
+  text-align: left;
+  line-height: 20px;
+  margin: 8px 0px;
+}
+.entry-tip-text-dot[data-v-19bb26c5] {
+  margin-right: 8px;
+  width: 3px;
+  height: 3px;
+  background-color: var(--xe-color-primary);
+  line-height: 20px;
+  border-radius: 50%;
+}
+.entry-wrapper[data-v-19bb26c5] {
+  padding: 0px 24px;
+}
+.entry-num[data-v-19bb26c5] {
+  display: inline-block;
+  transform: translateY(-1px);
+}
+.private-messages-tip[data-v-19bb26c5] {
+  width: 100%;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-268e8053]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+[data-v-268e8053] .van-overlay {
+  z-index: 998 !important;
+}
+[data-v-268e8053] .van-dialog {
+  overflow: unset;
+}

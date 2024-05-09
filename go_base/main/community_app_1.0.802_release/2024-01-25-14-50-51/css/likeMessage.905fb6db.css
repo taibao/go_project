@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-6c658812]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.community-bar[data-v-6c658812] {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  border-radius: 0.3rem;
+  background: #fafafa;
+  color: #666;
+  font-size: 14px;
+  padding: 4px 8px;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.community-bar .circle-icon[data-v-6c658812] {
+  margin-right: 0.08rem;
+}
+.community-bar .community-name[data-v-6c658812] {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: nowrap;
+  font-size: 14px;
+  flex: 1;
+  color: #666;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-cf1a89f2]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.message-wrap[data-v-cf1a89f2] {
+  padding: 0.32rem 0;
+  border-bottom: 0.02rem solid #EEEEEE;
+  word-break: break-all;
+}
+.message-wrap .quote-root[data-v-cf1a89f2] {
+  margin-top: 0.24rem;
+  margin-left: calc(32px + 0.16rem);
+  display: flex;
+  flex-direction: column;
+}
+.message-wrap .quote-root .quote-content-wrapper[data-v-cf1a89f2] {
+  box-sizing: border-box;
+  padding: 0.16rem;
+  width: 6.06rem;
+  border-radius: 0.16rem;
+  background: #FAFAFA;
+  font-size: 0.28rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.24rem;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-user[data-v-cf1a89f2] {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.1rem;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-user-mark[data-v-cf1a89f2] {
+  display: inline-block;
+  font-family: "PingFangSC-Medium";
+  font-weight: 500;
+  font-size: 0.28rem;
+  color: #333333;
+  max-width: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-user-mark-type[data-v-cf1a89f2] {
+  margin: 0 0.06rem;
+  color: #666666;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-user .feed-user-mark[data-v-cf1a89f2] {
+  display: inline-block;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content[data-v-cf1a89f2] {
+  line-height: 0.4rem;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content .normal-text-container[data-v-cf1a89f2] {
+  display: flex;
+  color: #666666;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content .normal-text-container[data-v-cf1a89f2] .video-cover {
+  position: relative;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.16rem;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content .normal-text-container[data-v-cf1a89f2] .video-cover img {
+  margin: 0;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content .normal-text-container[data-v-cf1a89f2] .video-cover i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0.5;
+  transform: translate(-50%, -50%);
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content .normal-text-container[data-v-cf1a89f2] img {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.07rem;
+  margin-right: 0.16rem;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content .normal-text-container[data-v-cf1a89f2] .normal-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  word-wrap: break-word;
+  line-height: 0.4rem;
+}
+.message-wrap .quote-root .quote-content-wrapper .quote-content .normal-text-container[data-v-cf1a89f2] .normal-text a {
+  color: #2F5B9E;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-677669fc]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.container-message[data-v-677669fc] {
+  background: #fff;
+  min-height: 100vh;
+}
+.container-message .wrap-refresh[data-v-677669fc] {
+  min-height: calc(100vh - var(--sticky-safe-area-top) - var(--placeholder-height));
+}
+.system-notification[data-v-677669fc] {
+  padding: 0 0.32rem;
+}
+.system-notification_wrapper[data-v-677669fc] {
+  margin-top: 0.16rem;
+}

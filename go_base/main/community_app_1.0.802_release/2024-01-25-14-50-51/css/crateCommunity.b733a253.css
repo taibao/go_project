@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-8196e580]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.full-screen-layout[data-v-8196e580] {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.full-screen-layout .layout-content[data-v-8196e580] {
+  height: 0;
+  flex: 1 0 auto;
+  overflow-y: auto;
+}
+.full-screen-layout .layout-content[data-v-8196e580]::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-2fbe2634]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.step-create-root[data-v-2fbe2634] {
+  background-color: #f5f5f5;
+}
+.step-create-root .info-wrapper[data-v-2fbe2634] {
+  padding: 0.16rem 0.32rem;
+}
+.bottom-btn[data-v-2fbe2634] {
+  background: #fff;
+  bottom: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  left: 0;
+  padding: 0rem 0.32rem 0;
+  padding-bottom: calc(0.28rem + constant(safe-area-inset-bottom));
+  /*兼容 IOS<11.2*/
+  padding-bottom: calc(0.28rem + env(safe-area-inset-bottom));
+  /*兼容 IOS>11.2*/
+}
+.bottom-btn .rule-select[data-v-2fbe2634] {
+  width: auto;
+  padding: 0.16rem 0rem 0.24rem 0;
+  font-family: PingFangSC-Regular;
+  font-size: 0.24rem;
+  color: #888888;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.bottom-btn .rule-select[data-v-2fbe2634]::before {
+  content: "";
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-right: 0.16rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 0.01rem solid #cccccc;
+  box-sizing: border-box;
+}
+.bottom-btn .rule-select-active[data-v-2fbe2634]::after {
+  content: "";
+  width: 0.32rem;
+  height: 0.32rem;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url("https://commonresource-1252524126.cdn.xiaoeknow.com/image/loy3ozsj0ly3.png");
+  background-size: 100%;
+  margin-left: -0.02rem;
+  /* background-color:$xe-color-primary; */
+}
+.bottom-btn .rule-select .rule-quote[data-v-2fbe2634] {
+  color: #0093D2;
+}
+.experience-tips[data-v-2fbe2634] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #EBF3FF;
+  padding: 0.24rem 0.32rem;
+  font-size: 0.24rem;
+  color: var(--xe-color-primary);
+  border-radius: 0.2rem;
+  margin-bottom: 0.16rem;
+}
+[data-v-2fbe2634] .bg-grey {
+  background-color: #f5f5f5 !important;
+}
