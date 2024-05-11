@@ -1,0 +1,30 @@
+{
+    "version": "1.0.901",
+    "routeMap": [
+        {
+            "h5Path": "/xe.community.community_service/v2/feedList",
+            "localPath": "eapplocalh5://index.html#/feedList",
+            "jumpMethod": "replaceAll"
+        },
+        {
+            "h5Path": "/xe.community.community_service/v2/clockTask",
+            "localPath": "eapplocalh5://index.html#/clockTask",
+            "jumpMethod": "default"
+        },
+        {
+            "h5Path": "/xe.community.community_service/v2/tagList",
+            "localPath": "eapplocalh5://index.html#/tagList",
+            "jumpMethod": "default"
+        },
+        {
+            "h5Path": "/xe.community.community_service/v2/feedDetail",
+            "localPath": "eapplocalh5://index.html#/feedDetail",
+            "jumpMethod": "default"
+        },
+        {
+            "h5Path": "/xe.community.community_service/v2/course",
+            "localPath": "eapplocalh5://index.html#/course",
+            "jumpMethod": "default"
+        }
+    ]
+}

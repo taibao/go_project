@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-31d7f7cd]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.notification-setting[data-v-31d7f7cd] {
+  padding: 0.24rem 0.32rem;
+  color: #999999;
+  font-size: 0.2rem;
+  line-height: 0.24rem;
+}
+.notification-setting p[data-v-31d7f7cd] {
+  padding: 0.16rem 0.32rem 0.24rem 0.32rem;
+  line-height: 16px;
+}
+.notification-setting .xe-card-container[data-v-31d7f7cd] {
+  background: #ffffff;
+  border-radius: 0.16rem;
+  overflow: hidden;
+  margin-bottom: 0.16rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 0.16rem 0 rgba(0, 0, 0, 0.04);
+}
+.notification-setting[data-v-31d7f7cd] .van-picker-column__item .van-ellipsis {
+  overflow: unset;
+}
+.notification-setting[data-v-31d7f7cd] .van-picker-column__item--selected .van-ellipsis {
+  font-size: 0.32rem;
+  font-weight: 600;
+}
+.notification-setting[data-v-31d7f7cd] .van-icon {
+  margin-left: 0.16rem;
+}
+.notification-setting .van-popup[data-v-31d7f7cd] {
+  height: 6.4rem;
+}
+.notification-setting .van-cell[data-v-31d7f7cd] {
+  align-items: center;
+  height: 0.96rem;
+}
+.notification-setting[data-v-31d7f7cd] .van-picker__toolbar {
+  height: 0.96rem;
+  border-bottom: 0.02rem solid #EBEBEB;
+}
+.notification-setting[data-v-31d7f7cd] .van-picker__toolbar .van-picker__title {
+  color: #333;
+  font-size: 0.32rem;
+}
+.notification-setting[data-v-31d7f7cd] .van-picker__toolbar .van-picker__confirm {
+  color: var(--xe-color-primary);
+  font-size: 0.28rem;
+}

@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-391164d6]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.course-item[data-v-391164d6] {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  width: 6.86rem;
+  padding: 0.24rem;
+  margin: 0.12rem 0;
+  border-radius: 0.16rem;
+  box-sizing: border-box;
+}
+.course-item-content[data-v-391164d6] {
+  display: flex;
+}
+.course-item-content .left[data-v-391164d6] {
+  display: flex;
+}
+.course-item-content .left img[data-v-391164d6] {
+  margin-right: 0.24rem;
+  width: 2.28rem;
+  height: 1.28rem;
+  flex-shrink: 0;
+  border-radius: 0.08rem;
+}
+.course-item-content .left .title[data-v-391164d6] {
+  width: 3.38rem;
+  overflow: hidden;
+  color: #333333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.28rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.4rem;
+  font-weight: bold;
+}
+.course-item-content .left .task-desc[data-v-391164d6] {
+  margin-top: 0.08rem;
+  display: flex;
+  color: #B2B2B2;
+  font-size: 0.24rem;
+  line-height: 0.32rem;
+}
+.course-item-content .left .task-desc .line-margin[data-v-391164d6] {
+  margin: 0 0.14rem;
+}
+.course-item-content .left .content-last-history[data-v-391164d6] {
+  margin-top: 0.16rem;
+  display: flex;
+  align-items: center;
+}
+.course-item-content .left .content-last-history .tag[data-v-391164d6] {
+  padding: 0.04rem 0.08rem;
+  height: 0.32rem;
+  box-sizing: border-box;
+  background-color: #F5F5F5;
+  color: #b2b2b2;
+  font-size: 0.2rem;
+}
+.course-item-content .left .content-last-history .desc[data-v-391164d6] {
+  margin-left: 0.16rem;
+  overflow: hidden;
+  color: #666666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.24rem;
+  max-width: 2.62rem;
+}
+.course-item-footer[data-v-391164d6] {
+  color: #B2B2B2;
+  font-size: 12px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-57f16144]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.catalogEmpty[data-v-57f16144] {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0.8rem;
+}
+.catalogEmpty img[data-v-57f16144] {
+  width: 4.8rem;
+  height: 6.4rem;
+}
+.catalogEmpty .empty-text-box[data-v-57f16144] {
+  width: 9.6rem;
+}
+.catalogEmpty .empty-text-box .guide-text[data-v-57f16144] {
+  text-align: center;
+  color: #666666;
+  font-size: 0.24rem;
+  padding-top: 0.16rem;
+}
+.catalogEmpty .empty-text-box .empty-text[data-v-57f16144] {
+  color: #666666;
+  font-size: 0.28rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.8rem;
+}
+.catalogEmpty .empty-text-box .button[data-v-57f16144] {
+  padding: 0 0.56rem;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-4316dce1]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.course-list[data-v-4316dce1] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-course[data-v-4316dce1] {
+  margin: 0.28rem 0 0.24rem 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: calc(100% - 0.3rem);
+  color: #1472FF;
+  font-size: 14px;
+}
+.edit-course .line[data-v-4316dce1] {
+  margin: 0 0.08rem;
+  width: 0.02rem;
+  height: 0.32rem;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-7ab59bf8]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.course-container[data-v-7ab59bf8] {
+  background-color: #F4F8FA;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.course-container[data-v-7ab59bf8] .progress-card__container {
+  background-color: transparent;
+}

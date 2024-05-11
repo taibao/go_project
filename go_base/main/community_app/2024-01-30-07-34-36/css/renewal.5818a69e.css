@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-6e31ee51]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.container[data-v-6e31ee51] {
+  display: flow-root;
+  width: 100%;
+  min-height: 100vh;
+  background-color: whitesmoke;
+  opacity: 1;
+  padding: 0.24em 0.32rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container .container-content[data-v-6e31ee51] {
+  background-color: white;
+  border-radius: 0.16rem;
+  opacity: 1;
+  border: 0;
+  width: 100%;
+}
+.container .container-content .backgorung-img[data-v-6e31ee51] {
+  height: 3.86rem;
+  width: 100%;
+  border-top-left-radius: 0.16rem;
+  border-top-right-radius: 0.16rem;
+}
+.container .container-content .backgorung-img .imgcover[data-v-6e31ee51] {
+  width: 100%;
+  border-top-left-radius: 0.16rem;
+  border-top-right-radius: 0.16rem;
+  height: 100%;
+}
+.container .container-content .content[data-v-6e31ee51] {
+  padding: 0.32rem;
+}
+.container .container-content .content .title[data-v-6e31ee51] {
+  color: #333333;
+  font-size: 0.32rem;
+  font-weight: 500;
+  font-family: "PingFang SC";
+  text-align: left;
+}
+.container .container-content .content .price[data-v-6e31ee51] {
+  margin-top: 0.24rem;
+  display: flex;
+  align-items: baseline;
+}
+.container .container-content .content .price .discount[data-v-6e31ee51] {
+  color: #ff5429;
+  font-size: 0.24rem;
+}
+.container .container-content .content .price .discount .price-icon[data-v-6e31ee51] {
+  padding-right: 0.04rem;
+}
+.container .container-content .content .price .discount .community-price[data-v-6e31ee51] {
+  font-size: 0.24rem;
+}
+.container .container-content .content .price .discount .discount_content[data-v-6e31ee51] {
+  display: inline-block;
+  color: #ff5429;
+  font-size: 0.48rem;
+}
+.container .container-content .content .price .original_discount_price[data-v-6e31ee51] {
+  color: #999999;
+  font-size: 0.24rem;
+  font-weight: 400;
+  font-family: "PingFang SC";
+  text-align: left;
+  line-height: 0.24rem;
+  margin-left: 0.16rem;
+  margin-top: 0.15rem;
+  text-decoration: line-through;
+}
+.container .container-content .content .price .original_price[data-v-6e31ee51] {
+  color: #999999;
+  font-size: 0.24rem;
+  font-weight: 400;
+  font-family: "PingFang SC";
+  text-align: left;
+  line-height: 0.24rem;
+  margin-left: 0.08rem;
+  margin-top: 0.15rem;
+}
+.container .container-content .content .discountview-wrapper[data-v-6e31ee51] {
+  display: flex;
+}
+.container .container-content .content .discountview[data-v-6e31ee51] {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  color: #ff781f;
+  font-size: 0.24rem;
+  font-weight: 500;
+  font-family: "PingFang SC";
+  height: 0.48rem;
+  box-sizing: border-box;
+  padding: 0.06rem 0.16rem;
+  margin-top: 0.16rem;
+  background-image: url("https://commonresource-1252524126.cdn.xiaoeknow.com/image/ljdqpe7k0bce.png");
+  background-size: 100% 100%;
+}
+.container .discountbutton[data-v-6e31ee51] {
+  width: 100%;
+  height: 0.8rem;
+  border-radius: 20px;
+  opacity: 1;
+  border: 0;
+  background: #1472ff;
+  color: white;
+  font-size: 0.28rem;
+  font-weight: 500;
+  font-family: "PingFang SC";
+  text-align: center;
+  line-height: 0.8rem;
+  margin-top: 0.64rem;
+}

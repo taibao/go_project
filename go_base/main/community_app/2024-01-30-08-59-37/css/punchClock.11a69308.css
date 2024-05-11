@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-4475d5c8]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.clock-task[data-v-4475d5c8] {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.clock-task .clock-task-header-wrapper[data-v-4475d5c8] {
+  padding: 0.24rem 0.32rem 0;
+}
+.clock-task .send-feed-editor-wrapper[data-v-4475d5c8] {
+  flex: 1;
+}
+.clock-task-header[data-v-4475d5c8] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.16rem;
+  background-color: #F5F5F5;
+  padding: 0.24rem;
+  margin-bottom: 0.24rem;
+}
+.clock-task-header .flex-wrapper[data-v-4475d5c8] {
+  display: flex;
+  align-items: center;
+}
+.clock-task-header .clock-status-tag[data-v-4475d5c8] {
+  height: 0.32rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.04rem 0.06rem;
+  border-radius: 0.04rem;
+  border: 0.02rem solid #07C160;
+  color: #07C160;
+  font-size: 0.2rem;
+  font-weight: 600;
+  margin-right: 0.08rem;
+}
+.clock-task-header .clock-task-text[data-v-4475d5c8] {
+  font-size: 0.28rem;
+  font-weight: 600;
+  color: #333333;
+  max-width: 4.6rem;
+  margin: 0 0.16rem;
+}
+.clock-task-header .clock-task-desc[data-v-4475d5c8] {
+  font-size: 0.28rem;
+  color: #1472FF;
+}
+.clock-tag .clock-icon[data-v-4475d5c8] {
+  position: relative;
+  top: 0.04rem;
+  width: 0.35rem;
+  height: 0.31rem;
+}
+.clock-tag .clock-title[data-v-4475d5c8] {
+  color: #2F5B9E;
+  font-size: 0.32rem;
+  line-height: 0.56rem;
+  margin-left: 0.09rem;
+}
+.clock-task-detail[data-v-4475d5c8] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+}
+.clock-task-detail .clock-task-wrapper[data-v-4475d5c8] {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  overflow: scroll;
+  border-top-left-radius: 0.3rem;
+  /* 左上角 */
+  border-top-right-radius: 0.3rem;
+  /* 右上角 */
+}

@@ -1,0 +1,342 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-6005a58d]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.members-grid[data-v-6005a58d] {
+  display: grid;
+  row-gap: 0.16rem;
+  -moz-column-gap: 0.24rem;
+       column-gap: 0.24rem;
+}
+.members-grid .member-item[data-v-6005a58d] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.members-grid .member-item .member-avatar[data-v-6005a58d] {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.1rem;
+}
+.members-grid .member-item .member-avatar .avatar-pic[data-v-6005a58d] {
+  box-sizing: border-box;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.members-grid .member-item .member-avatar .newly-added-tag[data-v-6005a58d] {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(0.24rem);
+          backdrop-filter: blur(0.24rem);
+  font-size: 0.24rem;
+  font-weight: 500;
+  min-width: 0.64rem;
+  height: 0.24rem;
+  border-radius: 0.12rem;
+  background: #ebf3ff;
+  color: var(--xe-color-primary);
+}
+.members-grid .member-item .member-avatar .newly-added-tag > span[data-v-6005a58d] {
+  transform: scale(0.8);
+}
+.members-grid .member-item .member-avatar .group-leader-tag[data-v-6005a58d] {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(0.24rem);
+          backdrop-filter: blur(0.24rem);
+  font-size: 0.24rem;
+  font-weight: 500;
+  min-width: 0.48rem;
+  height: 0.24rem;
+  border-radius: 0.12rem;
+  background: linear-gradient(99.1deg, #f9dabdff 0%, #f2c89fff 100%);
+  color: #77431e;
+}
+.members-grid .member-item .member-avatar .group-leader-tag > span[data-v-6005a58d] {
+  transform: scale(0.8);
+}
+.members-grid .member-item .member-nickname[data-v-6005a58d] {
+  max-width: 1.2rem;
+  font-size: 0.24rem;
+  opacity: 0.5;
+}
+.members-grid .member-item .member-nickname[data-v-6005a58d] .name-item {
+  max-width: 100% !important;
+}
+.members-grid .member-item .more-member-overlay[data-v-6005a58d] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  background: #00000066;
+}
+.members-grid .add-member-btn-wrap[data-v-6005a58d] {
+  text-align: center;
+}
+.members-grid .add-member-btn-wrap .add-member-btn[data-v-6005a58d] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+  background: #ebf3ff;
+  border: 0.02rem solid var(--xe-color-primary);
+  color: var(--xe-color-primary);
+  opacity: 0.6;
+  box-sizing: border-box;
+}
+.members-grid .add-member-btn-wrap .add-member-btn .add-member-icon[data-v-6005a58d] {
+  line-height: 0;
+}
+.members-grid .add-member-btn-wrap .add-text[data-v-6005a58d] {
+  color: #999;
+  font-size: 0.24rem;
+  margin-top: 0.12rem;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-60634cfb]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.cover-picker[data-v-60634cfb] {
+  padding: 0.32rem;
+}
+.cover-picker .picker-btn[data-v-60634cfb] {
+  height: 0.8rem;
+  margin: 0.32rem 0;
+  color: #333333 !important;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-8a2cd64a]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.group-setting[data-v-8a2cd64a] {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.group-setting .setting-body[data-v-8a2cd64a] {
+  flex: 1;
+}
+.group-setting .setting-body .group-cover[data-v-8a2cd64a] {
+  position: relative;
+  width: 100%;
+}
+.group-setting .setting-body .group-cover .group-step-cover-image[data-v-8a2cd64a] {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.16rem;
+  background: #CCCCCC;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.group-setting .setting-body .group-cover .camera-right-btn[data-v-8a2cd64a] {
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+.group-setting .setting-body .group-name-input .len-limit[data-v-8a2cd64a] {
+  color: #ccc;
+  margin-left: 0.08rem;
+  font-size: 0.24rem;
+  text-align: right;
+}
+.group-setting .setting-body .group-declaration-input[data-v-8a2cd64a] .van-field__control {
+  min-height: 1.68rem;
+}
+.group-setting .setting-body .group-members-wrap[data-v-8a2cd64a] {
+  background: #fff;
+  padding: 0.32rem;
+  border-radius: 0.24rem;
+  margin: 0 0.32rem 0.24rem 0.32rem;
+}
+.group-setting .setting-body .group-members-wrap .group-members-num[data-v-8a2cd64a] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.32rem;
+}
+.group-setting .setting-body .group-members-wrap .heading-text[data-v-8a2cd64a] {
+  font-size: 0.28rem;
+}
+.group-setting .setting-body .group-members-wrap .manage-btn[data-v-8a2cd64a] {
+  color: var(--xe-color-primary);
+  font-size: 0.24rem;
+  position: relative;
+}
+.group-setting .setting-body .group-members-wrap .manage-btn .manage-guide-pop[data-v-8a2cd64a] {
+  position: absolute;
+  right: -0.02rem;
+  top: 0.46rem;
+  padding: 0.16rem;
+  border-radius: 0.08rem;
+  background: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  color: #fff;
+  z-index: 5;
+}
+.group-setting .setting-body .group-members-wrap .manage-btn .manage-guide-pop[data-v-8a2cd64a]::before {
+  position: absolute;
+  top: -0.28rem;
+  right: 0.12rem;
+  content: "";
+  border: 0.14rem solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+}
+.group-setting .setting-body .group-members-wrap[data-v-8a2cd64a] .members-wrap {
+  padding-bottom: 0 !important;
+}
+.group-setting .setting-body .group-members-wrap[data-v-8a2cd64a] .members-grid {
+  display: grid;
+  row-gap: 0.22rem !important;
+  -moz-column-gap: 0.54rem !important;
+       column-gap: 0.54rem !important;
+}
+.group-setting .setting-body .group-members-wrap[data-v-8a2cd64a] .member-nickname {
+  max-width: 0.84rem !important;
+  line-height: 0.32rem;
+}
+.group-setting .setting-footer[data-v-8a2cd64a] {
+  padding: 0.16rem 0.32rem 0 0.32rem;
+  padding-bottom: calc(0.16rem + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  box-shadow: 0 0.08px 0.22px 0 rgba(0, 62, 101, 0.15);
+  background: #fff;
+  position: sticky;
+  bottom: 0;
+}
+.group-setting .setting-footer .save-btn[data-v-8a2cd64a] {
+  height: 0.8rem;
+}
+.group-setting .setting-card[data-v-8a2cd64a] {
+  background: #fff;
+  margin: 0.24rem 0.32rem;
+  border-radius: 0.24rem;
+  overflow: hidden;
+}
+.group-setting[data-v-8a2cd64a] .van-field__control {
+  color: #191919;
+}
+.group-setting[data-v-8a2cd64a] .van-field__control::-moz-placeholder {
+  color: #B2B2B2;
+}
+.group-setting[data-v-8a2cd64a] .van-field__control::placeholder {
+  color: #B2B2B2;
+}
+.group-setting[data-v-8a2cd64a] .van-field__word-limit {
+  margin-top: 0;
+  color: #ccc;
+}

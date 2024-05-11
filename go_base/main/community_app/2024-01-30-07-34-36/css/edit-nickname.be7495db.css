@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-52070ac4]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.nickname-edit[data-v-52070ac4] {
+  padding: 0 0.32rem 1.36rem;
+}
+.nickname-edit .tips[data-v-52070ac4] {
+  color: #999999;
+  padding: 0.24rem 0;
+  font-size: 0.24rem;
+}
+.nickname-edit .preview-btn[data-v-52070ac4] {
+  color: var(--xe-color-primary);
+  padding-left: 0.16rem;
+}
+.nickname-edit .example-box[data-v-52070ac4] {
+  height: 4.48rem;
+  overflow-x: auto;
+  padding: 0 0.32rem 0.48rem;
+  border-bottom: 1px solid #EBEBEB;
+}
+.nickname-edit .example-box img[data-v-52070ac4] {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+.nickname-edit .name-len[data-v-52070ac4] {
+  font-size: 0.24rem;
+  color: #B2B2B2;
+}
+.nickname-edit .van-form[data-v-52070ac4] {
+  border-radius: 0.16rem;
+  overflow: hidden;
+}
+.nickname-edit .submit-btn[data-v-52070ac4] {
+  background: #FFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.16rem 0.32rem;
+  padding-bottom: calc(0.16rem + constant(safe-area-inset-bottom));
+  padding-bottom: calc(0.16rem + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+.nickname-edit .van-cell[data-v-52070ac4]::after {
+  border-color: #ebebeb;
+}
+.only-nickname[data-v-52070ac4] {
+  padding-top: 0.32rem;
+}
+.only-nickname .van-form[data-v-52070ac4] {
+  min-height: 2rem;
+  background: #FFF;
+}
+.only-nickname .nick-name-field[data-v-52070ac4]::after {
+  position: absolute;
+  box-sizing: border-box;
+  content: " ";
+  pointer-events: none;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  border-bottom: 1px solid #ebebeb;
+  transform: scaleY(0.5);
+}
+[data-v-52070ac4].summary .van-field__word-limit {
+  font-size: 0.24rem;
+  color: #B2B2B2;
+}
+[data-v-52070ac4].nick-name-field .van-cell__title span::after {
+  content: "*";
+  color: #FF2929;
+  padding-left: 0.04rem;
+  position: relative;
+  top: 0.02rem;
+}
+[data-v-52070ac4].nick-name-field .van-field__label {
+  color: #333;
+}
+[data-v-52070ac4] .preview-dialog .van-dialog__header {
+  padding: 0.48rem 0 0.16rem;
+  font-size: 0.32rem;
+  font-weight: 600;
+  color: #333;
+}
+[data-v-52070ac4] .preview-dialog .van-button__text {
+  color: var(--xe-color-primary);
+  font-size: 0.32rem;
+  font-weight: 600;
+}

@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-77cd13e0]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.community-tag-item__wrapper[data-v-77cd13e0] {
+  display: flex;
+  align-items: center;
+  padding: 0.28rem 0.32rem;
+  font-size: 0.28rem;
+  border-radius: 0.16rem;
+}
+.community-tag-item__wrapper .tag-name[data-v-77cd13e0] {
+  max-width: 4.5rem;
+  margin: 0 0 0 0.2rem;
+  flex: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.community-tag-item__wrapper .tag-available[data-v-77cd13e0] {
+  font-size: 0.24rem;
+  color: #999;
+  text-align: left;
+  margin: 0.08rem 0 0 0.2rem;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-019ad1e1]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.community-tags-manage .header[data-v-019ad1e1] {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.28rem;
+}
+.community-tags-manage .community-tags-manage-list-wrap[data-v-019ad1e1] {
+  margin: 0;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-733df240]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.tag-input[data-v-733df240] .xe-input-container input {
+  height: 0.8rem !important;
+}
+.community-tag-header[data-v-733df240] {
+  text-align: right;
+  font-size: 0.28rem;
+  color: var(--xe-color-primary);
+}
+.header-cancel-btn[data-v-733df240] {
+  color: #666666;
+}
+.community-tags__wrapper[data-v-733df240] {
+  padding: 0.32rem;
+  box-sizing: border-box;
+  color: #333;
+  background: #f5f5f5;
+  height: calc(100vh - var(--sticky-safe-area-top));
+  padding-bottom: calc(1.2rem + constant(safe-area-inset-bottom));
+  padding-bottom: calc(1.2rem + env(safe-area-inset-bottom));
+  overflow: auto;
+}
+.community-tags__wrapper .community-tags-list[data-v-733df240] {
+  margin: 0;
+}
+.community-tags__wrapper .community-tags-list .community-tags-list-item[data-v-733df240] {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0.16rem 0;
+  padding: 0.24rem 0.32rem;
+  font-size: 0.28rem;
+  background-color: #fff;
+  border-radius: 0.16rem;
+}
+.community-tags__wrapper .community-tags-list .community-tags-list-item .left[data-v-733df240] {
+  flex: 1;
+  width: 0;
+}
+.community-tags__wrapper .community-tags-list .community-tags-list-item .right[data-v-733df240] {
+  display: flex;
+  align-items: center;
+}
+.community-tags__wrapper .community-tags-list .community-tags-list-item .tag-name[data-v-733df240] {
+  line-height: 0.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.community-tags__wrapper .community-tags-list .community-tags-list-item .tag-available[data-v-733df240] {
+  line-height: 0.32rem;
+  font-size: 0.24rem;
+  color: #999;
+  margin-top: 0.08rem;
+}
+.community-tags__wrapper .new-tag-dialog-content[data-v-733df240] {
+  padding: 0.32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.community-tags__wrapper .new-tag-dialog-content .new-dialog-text-area-wrap[data-v-733df240] {
+  width: calc(100% - 0.64rem);
+  margin: 0 0 0.48rem 0;
+  padding: 0.24rem 0.32rem 0 0.32rem;
+  border-radius: 0.08rem;
+  background-color: #f5f5f5;
+}
+.community-tags__wrapper .new-tag-dialog-content .new-dialog-text-area-wrap .new-dialog-word-limit[data-v-733df240] {
+  color: #ccc;
+  font-size: 0.24rem;
+  text-align: right;
+  padding: 0 0 0.18rem 0;
+}
+.community-tags__wrapper .new-tag-dialog-content[data-v-733df240] button::after {
+  border: none;
+}
+.community-tags__wrapper .community-tags-empty[data-v-733df240] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.6rem;
+}
+.community-tags__wrapper .community-tags-empty .empty-icon[data-v-733df240] {
+  width: 6.86rem;
+  height: 5.84rem;
+}
+.community-tags__wrapper .community-tags-empty .empty-text[data-v-733df240] {
+  color: #999;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  margin-bottom: 0.32rem;
+  text-align: center;
+}

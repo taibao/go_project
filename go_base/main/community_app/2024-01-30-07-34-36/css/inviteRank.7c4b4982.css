@@ -1,0 +1,1404 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-547f16b9]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.top-rank--card[data-v-547f16b9] {
+  width: 2.16rem;
+  border-radius: 0.16rem;
+  opacity: 1;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  box-shadow: 0.2rem 0.4rem 0.8rem 0 rgba(213, 226, 255, 0.2);
+  background: linear-gradient(330deg, #FFF6F1 0%, #FEBB8F 100%);
+  border: 1px solid #FFF8F3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-flag[data-v-547f16b9] {
+  width: 1.44rem;
+  height: 0.4rem;
+  background-size: cover;
+  margin-bottom: 0.24rem;
+  flex-shrink: 0;
+}
+.content[data-v-547f16b9] {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.qy-user-info[data-v-547f16b9] {
+  display: inline-block;
+  max-width: 1.12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  height: 0.4rem;
+  color: #333333;
+  font-size: 0.28rem;
+  font-weight: 400;
+  line-height: 0.4rem;
+  margin-bottom: 0.08rem;
+  margin-top: 0.08rem;
+}
+.card-title[data-v-547f16b9] {
+  opacity: 0.8;
+  color: #ff781f;
+  font-size: 0.24rem;
+  font-weight: 400;
+  line-height: 0.32rem;
+}
+
+.xe-popup-list[data-v-dfa67daa] {
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+.show-animation[data-v-dfa67daa] {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: bounce-dfa67daa;
+    transform-origin: center bottom;
+}
+@keyframes bounce-dfa67daa {
+0%, 15%, 47%, 73%,89%,100% {
+        animation-timing-function: ease-out;
+        transform: translate3d(0,0,0);
+}
+30%, 32% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, -42px, 0);
+}
+60% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, -24px, 0);
+}
+82% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0, -12px, 0);
+}
+94% {
+        animation-timing-function: ease-in;
+        transform: translate3d(0,-3px,0);
+}
+}
+.xe-flex-end[data-v-dfa67daa] {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.xe-triangle[data-v-dfa67daa] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 997;
+}
+.xe-popup-mask[data-v-dfa67daa] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 995;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.4;
+}
+.xe-popup-show[data-v-dfa67daa] {
+    opacity: 1;
+    visibility: visible;
+}
+.xe-z_index[data-v-dfa67daa] {
+    z-index: 996;
+}
+
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-15bba294]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.menu__wrapper[data-v-15bba294] {
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0.08rem;
+  box-shadow: 0 0.04rem 0.24rem rgba(50, 50, 51, 0.12);
+}
+.menu__wrapper .menu-item__wrapper[data-v-15bba294] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 0.88rem;
+  width: 1.6rem;
+  font-size: 0.28rem;
+  color: #333333;
+}
+.menu__wrapper .menu-item__wrapper[data-v-15bba294]:first-child {
+  border-top-left-radius: 0.08rem;
+  border-top-right-radius: 0.08rem;
+}
+.menu__wrapper .menu-item__wrapper[data-v-15bba294]:first-child::after {
+  position: relative;
+  top: 0.2rem;
+  content: "";
+  width: 1.46rem;
+  height: 1px;
+  background-color: #f5f5f5;
+}
+.menu__wrapper .menu-item__wrapper[data-v-15bba294]:last-child {
+  border-bottom-left-radius: 0.08rem;
+  border-bottom-right-radius: 0.08rem;
+}
+.menu__wrapper .menu-item__wrapper--active[data-v-15bba294] {
+  color: #F88717;
+}
+.rank-popover[data-v-15bba294] {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+.hidden-rank-popover[data-v-15bba294] {
+  opacity: 0;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-7a583f59]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.choose-rank-list[data-v-7a583f59] {
+  width: 100%;
+  overflow: auto;
+}
+.choose-rank-list[data-v-7a583f59]::-webkit-scrollbar {
+  display: none;
+}
+.choose-rank-list-type[data-v-7a583f59] {
+  z-index: 2;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.08rem 0.32rem;
+  position: relative;
+}
+.choose-rank-list-type .choose-button[data-v-7a583f59] {
+  height: 0.56rem;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  text-align: center;
+  font-size: 0.28rem;
+}
+.choose-rank-list-type .choose-button-has-custom[data-v-7a583f59] {
+  justify-content: flex-start;
+}
+.choose-rank-list-type .choose-button .show-btn[data-v-7a583f59] {
+  padding: 0.08rem 0.24rem;
+  width: 1.2rem;
+  box-sizing: border-box;
+  border-radius: 4rem;
+  flex-shrink: 0;
+  background: rgba(255, 162, 77, 0.7);
+  color: #CC5100;
+  margin-right: 0.24rem;
+}
+.choose-rank-list-type .choose-button .show-btn[data-v-7a583f59]:last-child {
+  margin-right: 0;
+}
+.choose-rank-list-type .choose-button .active[data-v-7a583f59] {
+  width: 1.28rem;
+  background: #D55600;
+  color: #fff;
+}
+.choose-rank-list-type .choose-button .active text[data-v-7a583f59],
+.choose-rank-list-type .choose-button .active[data-v-7a583f59].filter-text {
+  font-weight: 500;
+}
+.choose-rank-list-type .choose-button .customer-bank[data-v-7a583f59] {
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0.08rem 0.24rem;
+}
+.active[data-v-7a583f59] {
+  border-radius: 14px;
+  background: #FF781F;
+  color: #fff;
+}
+.active span[data-v-7a583f59], .active[data-v-7a583f59].filter-text {
+  font-weight: 600;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-504de291]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.container-content[data-v-504de291] {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 0.28rem;
+  height: 1.12rem;
+  padding: 0 0.32rem;
+}
+.group-member-list[data-v-504de291] {
+  color: #666;
+  font-size: 0.24rem;
+  padding: 0.16rem 0.72rem 0.16rem 1.24rem;
+  background-color: #fafafa;
+}
+.group-member-list .member-avatar[data-v-504de291] {
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  margin-right: 0.16rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.group-member-list .member-growth-num[data-v-504de291] {
+  justify-content: flex-end;
+  flex: 1;
+  font-family: "D-DIN-Bold";
+  font-size: 0.32rem;
+  opacity: 0.8;
+  color: #F88717;
+}
+.show-more[data-v-504de291] {
+  height: 0.64rem;
+  color: #666666;
+  font-size: 0.24rem;
+  background-color: #fafafa;
+}
+.show-more .show-more-text[data-v-504de291] {
+  opacity: 0.6;
+}
+.container-content-growth[data-v-504de291] {
+  justify-content: flex-end;
+  text-align: center;
+  width: 0.8rem;
+  flex: 1;
+  font-size: 0.32rem;
+  font-family: "D-DIN-Bold";
+  color: #F88717;
+  text-align: right;
+  opacity: 0.8;
+}
+.container-content-growth .community-enter-person[data-v-504de291] {
+  margin-left: 0.08rem;
+  opacity: 0.6;
+}
+.container-content-growth .empty-community-enter-person[data-v-504de291] {
+  opacity: 0;
+}
+.container-content-member[data-v-504de291] {
+  display: flex;
+  align-items: center;
+  flex-basis: 58%;
+  margin-right: 0.16rem;
+}
+.container-content-member .group-avatar[data-v-504de291],
+.container-content-member .member-avatar[data-v-504de291] {
+  width: 0.64rem;
+  height: 0.64rem;
+  margin-right: 0.16rem;
+  flex-shrink: 0;
+}
+.container-content-member .group-avatar[data-v-504de291] {
+  border-radius: 0.08rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-content-member .member-avatar[data-v-504de291] {
+  border-radius: 50%;
+}
+.container-content-member text[data-v-504de291] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 3.06rem;
+}
+.container-content-member .group-name[data-v-504de291] {
+  font-size: 0.24rem;
+  color: #999999;
+  width: 2.9rem;
+}
+.container-content-member .my-group-name[data-v-504de291] {
+  font-weight: 600;
+  font-size: 0.28rem;
+}
+.container-content-member .personal-group-name[data-v-504de291] {
+  font-weight: 400;
+  opacity: 0.8;
+}
+.container-content-member .my-group-name[data-v-504de291],
+.container-content-member .personal-group-name[data-v-504de291] {
+  color: #fff;
+  max-width: 2.9rem;
+}
+.container-content-ranking[data-v-504de291] {
+  flex-basis: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -0.28rem;
+  margin-right: 0.08rem;
+}
+.container-content-ranking .container-content-ranking-img[data-v-504de291] {
+  width: 0.6rem;
+  height: 0.6rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container-content-ranking .rank-num-font[data-v-504de291] {
+  font-size: 0.48rem;
+  font-family: "D-DIN-Bold";
+  color: #F88717;
+  opacity: 0.5;
+}
+.qy-user-info[data-v-504de291] {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0.4rem;
+  display: inline-block;
+  max-width: 3.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-349ca643]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.container-content-my-rank[data-v-349ca643] {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.28rem;
+  padding: 0.24rem 0.32rem 0;
+  padding-bottom: calc(0.24rem + constant(safe-area-inset-bottom));
+  padding-bottom: calc(0.24rem + env(safe-area-inset-bottom));
+}
+.container-content-my-rank .container-content-ranking[data-v-349ca643] {
+  margin-right: 0.32rem;
+}
+.container-content-my-rank .container-content-ranking .no-rank[data-v-349ca643] {
+  min-width: 0.64rem;
+  height: 0.64rem;
+  margin-left: 0.24rem;
+  font-size: 0.24rem;
+  color: #999;
+  opacity: 0.6;
+  font-weight: 400;
+  text-align: center;
+}
+.container-content-my-rank .container-content-ranking .my-rank-num[data-v-349ca643] {
+  font-size: 0.28rem;
+  font-family: "D-DIN-Bold";
+  color: #FFB686;
+}
+.container-content-my-rank .container-content-ranking .container-content-ranking-img[data-v-349ca643] {
+  width: 0.64rem;
+  height: 0.64rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container-content-my-rank .container-content-growth[data-v-349ca643] {
+  color: #FF781F;
+  font-size: 0.32rem;
+}
+.container-content-my-rank .container-content-growth .community-enter-person[data-v-349ca643] {
+  font-weight: 400;
+  margin-left: 0.08rem;
+}
+.container-content-my-rank .container-content-member[data-v-349ca643] {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 0.16rem;
+}
+.container-content-my-rank .container-content-member .member-avatar[data-v-349ca643] {
+  width: 0.64rem;
+  height: 0.64rem;
+  margin-right: 0.16rem;
+  flex-shrink: 0;
+  border-radius: 0.64rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-content-my-rank .container-content-member .group-avatar[data-v-349ca643] {
+  border-radius: 0.08rem;
+}
+.container-content-my-rank .container-content-member .group-name[data-v-349ca643] {
+  color: #999;
+  font-size: 0.24rem;
+  font-weight: 400;
+  line-height: 0.32rem;
+}
+.container-content-my-rank .container-content-member .container-content-member-right[data-v-349ca643] {
+  flex: 1;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.container-content-my-rank .container-content-member .container-content-member-right[data-v-349ca643] .name-item {
+  display: inline;
+}
+.qy-user-info[data-v-349ca643] {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0.4rem;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-c2d2e0b6]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.avatar-list[data-v-c2d2e0b6] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 0.44rem;
+}
+.imgList-img[data-v-c2d2e0b6] {
+  width: 0.4rem;
+  height: 0.4rem;
+  padding: 0;
+  border-radius: 50%;
+  border: 0.02rem solid #ffffff;
+  position: relative;
+}
+.imgList-img--position[data-v-c2d2e0b6] {
+  margin-left: -0.08rem;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-bceca590]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.invite-rank-entry[data-v-bceca590] {
+  width: 100%;
+  height: 0.88rem;
+  border-radius: 0.16rem;
+  background: linear-gradient(150.9deg, #fff0d6 0%, #ffffff 100%);
+  padding: 0.24rem 0.32rem;
+  box-sizing: border-box;
+  border: 0.02rem solid #ffffff;
+  justify-content: space-between;
+}
+.invite-rank-entry .invite-rank--title[data-v-bceca590] {
+  height: 0.4rem;
+  color: #ff781f;
+  font-size: 0.28rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 0.4rem;
+}
+.invite-rank-entry .invite-rank--title__icon[data-v-bceca590] {
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-right: 0.08rem;
+}
+.invite-rank-entry .invite-rank--content[data-v-bceca590] {
+  display: flex;
+  height: 0.4rem;
+  align-items: center;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-491d1094]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.guide-pc-model[data-v-491d1094] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+.guide-pc-model__mask[data-v-491d1094] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+.guide-pc-model__content[data-v-491d1094] {
+  position: relative;
+  width: 5.76rem;
+  height: 5.36rem;
+  border-radius: 0.16rem;
+  background: #fff;
+}
+.guide-pc-model__content .pc-community-cover[data-v-491d1094] {
+  width: 100%;
+  height: 3.8rem;
+  transform: translateY(-1.58rem);
+}
+.guide-pc-model__content .guide-wrapper[data-v-491d1094] {
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0.44rem 0.4rem;
+  width: 100%;
+}
+.guide-pc-model__content .guide-wrapper .title[data-v-491d1094] {
+  text-align: center;
+  margin-bottom: 0.28rem;
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: #333;
+}
+.guide-pc-model__content .guide-wrapper .desc[data-v-491d1094] {
+  text-align: center;
+  margin-bottom: 0.38rem;
+  font-size: 0.28rem;
+  color: #666;
+}
+.guide-pc-model__content .guide-wrapper .copy-btn[data-v-491d1094] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.8rem;
+  background-color: var(--xe-color-primary);
+  border-radius: 0.4rem;
+  color: #fff;
+  font-size: 0.28rem;
+}
+.guide-pc-model__content .close-icon[data-v-491d1094] {
+  position: absolute;
+  bottom: -0.96rem;
+  left: 50%;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  width: 0.64rem;
+  height: 0.64rem;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-02a1198b]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.feed-tag-manager .popup-container[data-v-02a1198b] {
+  max-height: 11.2rem;
+  min-height: 8.8rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.28rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+}
+.feed-tag-manager .popup-container .header[data-v-02a1198b] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.96rem;
+  min-height: 0.96rem;
+  font-size: 0.32rem;
+  font-weight: 500;
+}
+.feed-tag-manager .popup-container .content[data-v-02a1198b] {
+  flex: 1;
+  height: 0;
+  overflow-y: auto;
+}
+.feed-tag-manager .popup-container .content .added[data-v-02a1198b] {
+  padding: 0.24rem 0.32rem;
+}
+.feed-tag-manager .popup-container .content .added .added-title[data-v-02a1198b] {
+  color: #666;
+}
+.feed-tag-manager .popup-container .content .added .added-container[data-v-02a1198b] {
+  position: relative;
+  padding-top: 0.24rem;
+}
+.feed-tag-manager .popup-container .content .added .added-container .added-expand-btn[data-v-02a1198b] {
+  display: inline-block;
+  width: 0.64rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  text-align: center;
+  border-radius: 0.16rem;
+  font-weight: 500;
+  color: var(--xe-color-primary);
+  background-color: #ebf3ff;
+  margin: 0.08rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.feed-tag-manager .popup-container .content .added .added-container .added-empty[data-v-02a1198b] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.9rem;
+  color: #999;
+  font-size: 0.24rem;
+}
+.feed-tag-manager .popup-container .content .divider[data-v-02a1198b] {
+  height: 0.16rem;
+  background-color: #f5f5f5;
+}
+.feed-tag-manager .popup-container .content .can-added[data-v-02a1198b] {
+  padding: 0.24rem 0.32rem;
+}
+.feed-tag-manager .popup-container .content .can-added .can-added-title[data-v-02a1198b] {
+  color: #666;
+}
+.feed-tag-manager .popup-container .content .can-added .can-added-container[data-v-02a1198b] {
+  padding-top: 0.24rem;
+}
+.feed-tag-manager .popup-container .content .can-added .can-added-container .can-added-empty[data-v-02a1198b] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #999;
+  font-size: 0.24rem;
+}
+.feed-tag-manager .popup-container .content .can-added .can-added-container .can-added-empty .empty-icon[data-v-02a1198b] {
+  width: 1.76rem;
+  height: 1.76rem;
+  margin-bottom: 0.16rem;
+}
+.feed-tag-manager .popup-container .content .can-added .can-added-container .tag-loading[data-v-02a1198b] {
+  text-align: center;
+  padding-top: 0.8rem;
+}
+.feed-tag-manager .popup-container .content .hashtag-container[data-v-02a1198b] {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.08rem;
+}
+.feed-tag-manager .popup-container .content .hashtag-container .hashtag[data-v-02a1198b] {
+  display: inline-block;
+  min-height: 0.64rem;
+  line-height: 0.64rem;
+  background: #f5f5f5;
+  border-radius: 0.16rem;
+  padding: 0 0.24rem;
+  margin: 0.08rem;
+}
+.feed-tag-manager .popup-container .content .hashtag-container .hashtag.primary[data-v-02a1198b] {
+  font-weight: 500;
+  color: #0093D2;
+  background-color: #E6F8FF;
+}
+.feed-tag-manager .popup-container .footer[data-v-02a1198b] {
+  background: #fff;
+  border-top: 0.01rem solid #ebebeb;
+  padding: 0.16rem 0.32rem;
+  padding-bottom: calc(0.16rem + env(safe-area-inset-bottom));
+}
+.create-tag-text[data-v-02a1198b] {
+  color: var(--xe-color-primary);
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-b46b9f3e]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.popup-wrapper[data-v-b46b9f3e] {
+  position: relative;
+}
+.panel-content[data-v-b46b9f3e] {
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+.panel-content .panel-content-title[data-v-b46b9f3e] {
+  font-size: 16px;
+  color: #323233;
+  text-align: center;
+  font-weight: 500;
+  margin: 0.24rem 0;
+  height: 0.48rem;
+  line-height: 0.48rem;
+}
+.panel-content .panel-content[data-v-b46b9f3e] {
+  overflow-x: auto;
+}
+.panel-content .panel-content[data-v-b46b9f3e]::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.panel-content .panel-content[data-v-b46b9f3e]::-ms-scrollbar {
+  height: 0;
+  width: 0;
+}
+.panel-content .panel-content-list[data-v-b46b9f3e] {
+  padding: 0;
+  display: flex;
+}
+.panel-content .panel-content-list .panel-content-list-item[data-v-b46b9f3e] {
+  display: flex;
+  padding: 0.32rem;
+}
+.panel-content .panel-content-list .panel-content-list-item .panel-content-list-box[data-v-b46b9f3e] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.panel-content .panel-content-list .panel-content-list-item .panel-content-list-box[data-v-b46b9f3e]:not(:last-child) {
+  margin-right: 0.7rem;
+}
+.panel-content .panel-content-list .panel-content-list-item .panel-content-icon[data-v-b46b9f3e] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.96rem;
+  height: 0.96rem;
+  border-radius: 12px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.panel-content .panel-content-list .panel-content-list-item .panel-content-text[data-v-b46b9f3e] {
+  color: #333333;
+  font-size: 0.24rem;
+  margin-top: 0.16rem;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.panel-content .invite-rank-entry__wrapper[data-v-b46b9f3e] {
+  margin: 0 0.32rem 0.32rem;
+}
+.panel-content .panel-content-bottom[data-v-b46b9f3e] {
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  position: relative;
+  width: 100vw;
+  bottom: 0;
+  padding-bottom: calc(constant(safe-area-inset-bottom));
+  padding-bottom: calc(env(safe-area-inset-bottom));
+}
+[data-v-b46b9f3e] .van-overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
+.can-create-icon[data-v-b46b9f3e] {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.xe-operating-popup[data-v-b46b9f3e] {
+  background-color: #f5f5f5;
+  padding: 12px 0.32rem 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: auto;
+}
+.xe-operating-popup[data-v-b46b9f3e]::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+.xe-operating-popup[data-v-b46b9f3e]::-ms-scrollbar {
+  height: 0;
+  width: 0;
+}
+.operating-item[data-v-b46b9f3e] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.operating-item[data-v-b46b9f3e]:first-child, .operating-item + .operating-item[data-v-b46b9f3e] {
+  margin-right: 35px;
+}
+.operating-item[data-v-b46b9f3e]:last-child {
+  margin-right: 0;
+}
+.operating-icon[data-v-b46b9f3e] {
+  width: 0.96rem;
+  height: 0.96rem;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 0.24rem;
+  display: inline-block;
+  margin-bottom: 8px;
+  display: flex;
+}
+.operating-icon[data-v-b46b9f3e] .xe-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.operating-text[data-v-b46b9f3e] {
+  font-size: 0.24rem;
+  white-space: nowrap;
+  color: #333333;
+  display: inline-block;
+  width: 100%;
+  line-height: 0.32rem;
+  text-align: center;
+}
+.operating-item-content[data-v-b46b9f3e] {
+  background: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 0.44rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.operating-item-content[data-v-b46b9f3e]::after {
+  border: none;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-5fd99e49]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.xe-more-scroll-view[data-v-5fd99e49] {
+  overflow: auto;
+}
+.invite-rank__wrapper[data-v-5fd99e49] {
+  height: 100vh;
+  background-color: #FFF4EC;
+}
+.header[data-v-5fd99e49] {
+  width: 100%;
+  height: 100vh;
+  vertical-align: bottom;
+  overflow: hidden;
+  position: fixed;
+  background-image: url("https://commonresource-1252524126.cdn.xiaoeknow.com/image/ljpgy4qb0clp.png");
+  background-color: #FFF4EC;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header__img[data-v-5fd99e49] {
+  position: absolute;
+  top: var(--safe-area-inset-top);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://commonresource-1252524126.cdn.xiaoeknow.com/image/ljmgfe7f045u.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.rank-entry__wrapper[data-v-5fd99e49] {
+  height: calc(1.46rem + var(--safe-area-inset-top));
+  padding-top: 0.24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 0.22rem;
+}
+.rank-entry__wrapper .rank-entry[data-v-5fd99e49] {
+  padding: 0.08rem 0.16rem 0.08rem 0.24rem;
+  border-radius: 0.4rem 0rem 0rem 0.4rem;
+  background: #ffa24d;
+  color: #FFF;
+  opacity: 0.89;
+  font-size: 0.24rem;
+  font-weight: 400;
+  line-height: 0.32rem;
+  z-index: 999;
+}
+.rank-entry__wrapper .rank-entry__mine[data-v-5fd99e49] {
+  margin-top: calc(var(--xe-nav-bar-height) + 0.24rem);
+}
+.header-container[data-v-5fd99e49] {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+.header-container__fix[data-v-5fd99e49] {
+  background-image: url("https://commonresource-1252524126.cdn.xiaoeknow.com/image/ljpgy4qb0clp.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rank-filter__wrapper[data-v-5fd99e49] {
+  padding-top: 0.32rem;
+  margin: 0 0 0.24rem;
+}
+.top-rank__wrapper[data-v-5fd99e49] {
+  margin-bottom: 0.24rem;
+  padding: 0 0.32rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.container[data-v-5fd99e49] {
+  position: relative;
+}
+.container .rank-list[data-v-5fd99e49] {
+  position: relative;
+  height: 100%;
+}
+.container .rank-list .rank-item[data-v-5fd99e49] {
+  position: relative;
+  z-index: 1;
+  content-visibility: auto;
+}
+.container .empty-rank-list[data-v-5fd99e49] {
+  height: auto;
+}
+.container .without-my-rank-empty-list[data-v-5fd99e49] {
+  min-height: calc(15vh + 0.04rem);
+}
+.container .container-header[data-v-5fd99e49] {
+  display: flex;
+  font-size: 0.24rem;
+  color: #999;
+  justify-content: space-between;
+  padding: 0.12rem 0.32rem 0.12rem;
+}
+.container .container-header text[data-v-5fd99e49]:first-child {
+  flex-basis: 12%;
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+}
+.container .container-header text[data-v-5fd99e49]:nth-child(2) {
+  flex-basis: 58%;
+}
+.container .container-header text[data-v-5fd99e49]:last-child {
+  flex: 1;
+  text-align: right;
+}
+.container .ranking-list__btn--share[data-v-5fd99e49] {
+  width: 2rem;
+  height: 0.64rem;
+  border-radius: 0.6rem;
+  border: 0 solid #979797;
+  background: #ff781f;
+  box-shadow: 0 0.08rem 0.16rem -0.08rem rgba(236, 109, 25, 0.4);
+  color: #fff;
+  font-size: 0.24rem;
+  font-weight: 600;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: calc(1.44rem + constant(safe-area-inset-bottom));
+  bottom: calc(1.44rem + env(safe-area-inset-bottom));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  -webkit-backdrop-filter: blur(1.6rem);
+          backdrop-filter: blur(1.6rem);
+  z-index: 2;
+}
+.container .ranking-list__btn--share .share-btn__icon[data-v-5fd99e49] {
+  font-weight: normal;
+  margin-right: 0.08rem;
+}
+.container .without-my-rank-share-btn[data-v-5fd99e49] {
+  bottom: calc(0.24rem + constant(safe-area-inset-bottom));
+  bottom: calc(0.24rem + env(safe-area-inset-bottom));
+}
+.container .empty[data-v-5fd99e49] {
+  margin-top: 1.6rem;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #b2b2b2;
+}
+.container .empty img[data-v-5fd99e49] {
+  width: 1.76rem;
+  height: 1.76rem;
+}
+.container .statistics-date[data-v-5fd99e49] {
+  color: #b2b2b2;
+  font-size: 0.2rem;
+  text-align: center;
+  padding: 0.48rem 0;
+}
+.container .statistics-date-position[data-v-5fd99e49] {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.6rem;
+}
+.container .without-my-rank-date[data-v-5fd99e49] {
+  bottom: 1.74rem;
+}
+.container .without-my-rank-date-popup[data-v-5fd99e49] {
+  bottom: 1.9rem;
+}
+.container .my-rank-date-popup[data-v-5fd99e49] {
+  bottom: 2.74rem;
+}
+.seat-wrapper[data-v-5fd99e49] {
+  height: 1.8rem;
+  background-color: transparent;
+}
+.max-tips[data-v-5fd99e49] {
+  color: #fff;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+}

@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-32d5ea07]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.auto-wrapper[data-v-32d5ea07] {
+  padding: 0.16rem 0;
+}
+.auto-wrapper .open-tip[data-v-32d5ea07] {
+  color: #999;
+  font-size: 0.2rem;
+}
+.auto-wrapper .switch-wrapper[data-v-32d5ea07] {
+  background: #fff;
+  padding: 0.2rem 0.32rem;
+  margin: 0 0.32rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.16rem;
+  align-items: center;
+}
+.auto-wrapper .switch-wrapper .title-text[data-v-32d5ea07] {
+  color: #333333;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+}
+.auto-wrapper .switch-wrapper .title-label[data-v-32d5ea07] {
+  color: #999999;
+  font-size: 0.2rem;
+  line-height: 0.24rem;
+  margin-top: 0.08rem;
+}
+.auto-wrapper .switch-wrapper .switch-item[data-v-32d5ea07] {
+  display: flex;
+}
+.center-container[data-v-32d5ea07] {
+  padding: 0 0.32rem;
+}
+.switch-chat[data-v-32d5ea07] {
+  position: absolute;
+  top: 0.24rem;
+  right: 0.32rem;
+}
+.card[data-v-32d5ea07] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.12rem;
+  background-color: #fff;
+  padding: 0 0.32rem;
+}
+.card .card-text[data-v-32d5ea07] {
+  font-size: 0.28rem;
+  color: #333;
+}
+.avatar-box[data-v-32d5ea07] {
+  display: flex;
+  align-items: center;
+}
+.avatar-box .user-avatar-container[data-v-32d5ea07] {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+.avatar-box .user-avatar-container .user-avatar[data-v-32d5ea07] {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.avatar-box .user-name[data-v-32d5ea07] {
+  font-size: 0.28rem;
+  color: #666666;
+  margin-left: 0.16rem;
+  margin-right: 0.12rem;
+}
+.example[data-v-32d5ea07] {
+  justify-content: space-between;
+  margin-top: 0.32rem;
+  margin-bottom: 0.24rem;
+  padding: 0 0.32rem;
+}
+.example .title[data-v-32d5ea07] {
+  font-size: 0.24rem;
+  color: #333333;
+  font-weight: 600;
+}
+.example .example-text[data-v-32d5ea07] {
+  font-size: 0.24rem;
+  color: var(--xe-color-primary);
+}
+.textarea-container[data-v-32d5ea07] {
+  box-sizing: border-box;
+  margin-top: 0.24rem;
+  background-color: #fff;
+  line-height: 0.4rem;
+  border-radius: 0.16rem;
+  padding-bottom: 0;
+}
+.textarea-container .title[data-v-32d5ea07] {
+  font-size: 0.28rem;
+  color: #666666;
+  padding: 0.32rem 0.32rem 0;
+}
+.textarea-container .textarea[data-v-32d5ea07] {
+  font-size: 0.28rem;
+  padding: 0.16rem 0.32rem 0.32rem;
+  color: #333333;
+}
+.textarea-container .wrong-content[data-v-32d5ea07] {
+  color: #ff4747;
+  font-size: 0.2rem;
+}
+.wrong-text[data-v-32d5ea07] {
+  font-size: 0.24rem;
+  color: #ff4747;
+  margin-top: 0.24rem;
+}
+.popup-title[data-v-32d5ea07] {
+  border-radius: 16px 16px 0 0;
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 0.44rem;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  height: 1.18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.member-list[data-v-32d5ea07] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.12rem;
+}
+.member-list .member-item[data-v-32d5ea07] {
+  flex: 1;
+}
+.tags-popup__wrapper[data-v-32d5ea07] {
+  padding: 0 0.32rem 0.32rem;
+  margin-top: 1.18rem;
+}
+.scroll-view[data-v-32d5ea07] {
+  height: 6.72rem;
+}
+.example-container[data-v-32d5ea07] {
+  position: absolute;
+  left: 50%;
+  top: 51%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.16rem;
+  padding: 0.48rem 0.32rem 0;
+  background-color: #fff;
+}
+.example-container .title[data-v-32d5ea07] {
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: #333;
+}
+.example-container .know-btn[data-v-32d5ea07] {
+  width: 100%;
+  height: 1.14rem;
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: var(--xe-color-primary);
+  border-top: 1px solid #f5f5f5;
+}
+.toolbar-fixed-wrapper[data-v-32d5ea07] {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.welcome-message-example-image {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.68rem;
+  margin-bottom: 0.84rem;
+  padding: 0 0.32rem 0;
+}

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*
+ * @Author: keke
+ * @Date: 2023-10-19 13:09:30
+ * @Description:
+ * @LastEditTime: 2023-12-15 15:30:42
+ * @LastEditors: keke
+ */
+/**
+ * 这里是uni-app内置的常用样式变量
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ */
+/* 行为相关颜色 */
+/* 背景颜色 */
+/* 文字基本颜色 */
+/* 边框颜色 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* 权限状态相关颜色 */
+[data-v-69c5d17a]:root {
+  --xe-nav-bar-height: 44px;
+  --common-safe-area-inset-top: 0px;
+  --safe-area-inset-top: var(--common-safe-area-inset-top);
+  --sticky-safe-area-top: calc(var(--safe-area-inset-top) + var(--xe-nav-bar-height));
+  --xe-color-primary: #03BAFC;
+  --xe-color-text: #0093D2;
+  --xe-color-link: #006EA6;
+  --xe-color-text--dark: #002E4D;
+  --xe-background-substrate: #E6F6FF;
+  --xe-background: #F4F8FA;
+  --xe-color-secondary: #00BBFF;
+  --safe-area-inset-bottom-constant: constant(safe-area-inset-bottom);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  --max-screen-width: 100vw;
+}
+.list-container[data-v-69c5d17a] {
+  border-bottom: 1px solid #f7f7f7;
+  padding-bottom: 0.32rem;
+  padding: 0.32rem;
+  background-color: #fff;
+}
+.list-container .list-title[data-v-69c5d17a] {
+  color: #666;
+  font-size: 0.28rem;
+  font-weight: 500;
+  margin-bottom: 0.32rem;
+}
+.list-container .user-list[data-v-69c5d17a] {
+  font-size: 0.28rem;
+  margin-bottom: 0.44rem;
+}
+.list-container .user-list .user-avatar[data-v-69c5d17a] {
+  width: 0.68rem;
+  height: 0.68rem;
+  border-radius: 50%;
+  margin-right: 0.16rem;
+}
+.list-container .user-list .user-name[data-v-69c5d17a] {
+  position: relative;
+  top: -0.24rem;
+}
+.list-container .user-list .text[data-v-69c5d17a] {
+  margin-top: 0.1rem;
+  margin-left: 0.88rem;
+  color: #333;
+  font-size: 0.28rem;
+}
+.list-container .dynamic-content[data-v-69c5d17a] {
+  margin-left: 0.9rem;
+  margin-top: 0.16rem;
+  font-size: 0.28rem;
+  line-height: 0.4rem;
+  word-break: break-all;
+}
+.list-container .divide-line[data-v-69c5d17a] {
+  height: 1px;
+  background-color: #eee;
+  margin-top: 0.32rem;
+  margin-bottom: 0.4rem;
+  margin-left: 0.64rem;
+}
