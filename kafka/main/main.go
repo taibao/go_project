@@ -15,20 +15,19 @@ func main() {
 	config.Producer.Partitioner = sarama.NewRandomPartitioner
 	config.Producer.Return.Successes = true
 
-	//client, err := sarama.NewSyncProducer([]string{"192.168.1.8:9092"}, config)
-	client, err := sarama.NewSyncProducer([]string{"10.10.42.114:9092"}, config)
+	client, err := sarama.NewSyncProducer([]string{"192.168.0.198:9092"}, config)
+	//client, err := sarama.NewSyncProducer([]string{"10.10.42.114:9092"}, config)
 	if err != nil {
 		fmt.Println("producer close, err:", err)
 		return
 	}
 	defer client.Close()
 	for {
-		sendMsg(client,"app_apm_server")
+		sendMsg(client, "goim-push-topic")
 	}
 }
 
-
-func sendMsg(client sarama.SyncProducer,topic_name string){
+func sendMsg(client sarama.SyncProducer, topic_name string) {
 	msg := &sarama.ProducerMessage{}
 	msg.Topic = topic_name
 
@@ -52,10 +51,7 @@ func sendMsg(client sarama.SyncProducer,topic_name string){
 	time.Sleep(5 * time.Second)
 }
 
-
-
-
-func getId() (id string){
+func getId() (id string) {
 	data := strconv.Itoa(int(time.Now().Unix()))
 	id = data[len(data)-6:]
 	return

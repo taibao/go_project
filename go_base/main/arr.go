@@ -35,7 +35,16 @@ func HttpBuildQuery(params map[string]string) (param_str string) {
 
 func main() {
 
-	fmt.Println(GetMinutesAgo())
+	//fmt.Println(GetMinutesAgo())
+
+	a := 1
+	b := 2
+	val := a + b
+	fmt.Println(val)
+	fmt.Println(5)
+	fmt.Println(6)
+	fmt.Println(7)
+	fmt.Println(8)
 
 	//str := map[string][]string{"first": {"value"}, "multi": {"foo bar", "baz"}}
 	//decodeStr = HttpBuildQuery(str)

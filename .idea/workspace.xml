@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bea7ac3d-85bc-49bc-b85a-7eff12f5ddf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app_user_service_go/service/conf_hub.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/bootstrap/app_init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/request/get_shop_info_request.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/controller/shop_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_es_service_go/http/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/http/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_es_service_go/repository/app_conf_repo.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/repository/app_conf_repo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_es_service_go/service/shop_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_es_service_go/service/shop_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_go/service/conf_hub.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go/service/conf_hub.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_go/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/app_go/service/service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_user_service_go" beforeDir="false" afterPath="$PROJECT_DIR$/app_user_service_go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cuser-info-service" beforeDir="false" afterPath="$PROJECT_DIR$/cuser-info-service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos" beforeDir="false" afterPath="$PROJECT_DIR$/kratos" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kratos/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/kratos/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/cmd/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/cmd/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xiaoe_api_log_service/component/phone_suscribe_consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/xiaoe_api_log_service/component/phone_suscribe_consumer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go_base/main/arr.go" beforeDir="false" afterPath="$PROJECT_DIR$/go_base/main/arr.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/main/consumer.go" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/main/consumer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/kafka/main/main.go" afterDir="false" />
     </list>
     <list id="0fb5379a-1b6c-40af-966a-0e8c820898e1" name="添加消费分组" comment="添加消费分组">
       <changelist_data name="vitaszhuo" email="vitaszhuo@xiaoe-teach.com" date="1639032014000" />
@@ -34,9 +24,6 @@
       <executable />
     </execution>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="src" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -44,7 +31,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" url="file://D:/go/go1.19.4" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -64,24 +51,23 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.vendoring.notification.had.been.shown": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "G:/code/go_code"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app_business_script_go/script/logic/worker" />
@@ -109,6 +95,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -124,7 +111,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.service" />
@@ -134,34 +121,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="2097" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1656914691777">
-      <screen x="1440" y="-350" width="2560" height="1415" />
-    </state>
-    <state x="2097" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.801/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1656914691777" />
-    <state x="2536" y="11" key="RollbackChangesDialog" timestamp="1657014075426">
-      <screen x="1440" y="-350" width="2560" height="1415" />
-    </state>
-    <state x="2536" y="11" key="RollbackChangesDialog/0.25.1440.799/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1657014075426" />
-    <state x="2519" y="-5" width="1073" height="736" key="find.popup" timestamp="1657012621550">
-      <screen x="1440" y="-350" width="2560" height="1415" />
-    </state>
-    <state x="2519" y="-5" width="1073" height="736" key="find.popup/0.25.1440.801/1440.-350.2560.1415@1440.-350.2560.1415" timestamp="1657012621550" />
-    <state x="2519" y="-23" width="1073" height="697" key="find.popup/0.25.1440.875/1440.-350.2560.1341@1440.-350.2560.1341" timestamp="1648885325448" />
-    <state x="708" y="257" width="705" height="496" key="find.popup/0.25.1680.951@0.25.1680.951" timestamp="1649951760714" />
-    <state x="642" y="141" width="987" height="722" key="find.popup/0.25.1680.958@0.25.1680.958" timestamp="1649235219231" />
-    <state x="1079" y="352" width="1073" height="698" key="find.popup/0.25.2560.1341@0.25.2560.1341" timestamp="1649851446327" />
-    <state x="505" y="236" width="671" height="615" key="search.everywhere.popup" timestamp="1649952774915">
-      <screen x="0" y="25" width="1680" height="951" />
-    </state>
-    <state x="505" y="236" width="671" height="615" key="search.everywhere.popup/0.25.1680.951@0.25.1680.951" timestamp="1649952774915" />
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

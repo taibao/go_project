@@ -14,7 +14,8 @@ var (
 
 func main() {
 	//app_apm_server
-	consumer, err := sarama.NewConsumer(strings.Split("10.10.42.114:9092", ","), nil)
+	consumer, err := sarama.NewConsumer(strings.Split("192.168.0.198:9092", ","), nil)
+	//consumer, err := sarama.NewConsumer(strings.Split("10.10.42.114:9092", ","), nil)
 	if err != nil {
 		fmt.Println("Failed to start consumer: %s", err)
 		return
@@ -42,7 +43,7 @@ func main() {
 			wg.Done()
 		}(pc)
 	}
-	time.Sleep(1*time.Second)
+	time.Sleep(1 * time.Second)
 	wg.Wait()
 	consumer.Close()
 }
