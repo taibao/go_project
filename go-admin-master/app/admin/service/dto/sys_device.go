@@ -9,160 +9,23 @@ import (
 
 type SysDeviceGetPageReq struct {
 	dto.Pagination `search:"-"`
-	UserId         int    `form:"userId" search:"type:exact;column:user_id;table:sys_user" comment:"用户ID"`
-	Username       string `form:"username" search:"type:contains;column:username;table:sys_user" comment:"用户名"`
-	NickName       string `form:"nickName" search:"type:contains;column:nick_name;table:sys_user" comment:"昵称"`
-	Phone          string `form:"phone" search:"type:contains;column:phone;table:sys_user" comment:"手机号"`
-	RoleId         string `form:"roleId" search:"type:exact;column:role_id;table:sys_user" comment:"角色ID"`
-	Sex            string `form:"sex" search:"type:exact;column:sex;table:sys_user" comment:"性别"`
-	Email          string `form:"email" search:"type:contains;column:email;table:sys_user" comment:"邮箱"`
-	PostId         string `form:"postId" search:"type:exact;column:post_id;table:sys_user" comment:"岗位"`
-	Status         string `form:"status" search:"type:exact;column:status;table:sys_user" comment:"状态"`
-	DeptDeviceJoin `search:"type:left;on:dept_id:dept_id;table:sys_user;join:sys_dept"`
-	SysDeviceOrder
+	UserId         int    `form:"userId" search:"type:exact;column:user_id;table:sys_device" comment:"用户ID"`
+	Username       string `form:"username" search:"type:contains;column:username;table:sys_device" comment:"用户名"`
+	NickName       string `form:"nickName" search:"type:contains;column:nick_name;table:sys_device" comment:"昵称"`
+	Phone          string `form:"phone" search:"type:contains;column:phone;table:sys_device" comment:"手机号"`
+	RoleId         string `form:"roleId" search:"type:exact;column:role_id;table:sys_device" comment:"角色ID"`
+	Sex            string `form:"sex" search:"type:exact;column:sex;table:sys_device" comment:"性别"`
+	Email          string `form:"email" search:"type:contains;column:email;table:sys_device" comment:"邮箱"`
+	PostId         string `form:"postId" search:"type:exact;column:post_id;table:sys_device" comment:"岗位"`
+	Status         string `form:"status" search:"type:exact;column:status;table:sys_device" comment:"状态"`
+	CreatedAt      string `form:"created_at" search:"type:exact;column:created_at;table:sys_device" comment:"创建时间"`
 }
 
 type SysDeviceOrder struct {
-	UserIdOrder    string `search:"type:order;column:user_id;table:sys_user" form:"userIdOrder"`
-	UsernameOrder  string `search:"type:order;column:username;table:sys_user" form:"usernameOrder"`
-	StatusOrder    string `search:"type:order;column:status;table:sys_user" form:"statusOrder"`
-	CreatedAtOrder string `search:"type:order;column:created_at;table:sys_user" form:"createdAtOrder"`
-}
-
-type DeptDeviceJoin struct {
-	DeptId string `search:"type:contains;column:dept_path;table:sys_dept" form:"deptId"`
-}
-
-func (m *SysDeviceGetPageReq) GetNeedSearch() interface{} {
-	return *m
-}
-
-type ResetSysDevicePwdReq struct {
-	UserId   int    `json:"userId" comment:"用户ID" vd:"$>0"` // 用户ID
-	Password string `json:"password" comment:"密码" vd:"len($)>0"`
-	common.ControlBy
-}
-
-func (s *ResetSysDevicePwdReq) GetId() interface{} {
-	return s.UserId
-}
-
-func (s *ResetSysDevicePwdReq) Generate(model *models.SysDevice) {
-	if s.UserId != 0 {
-		model.UserId = s.UserId
-	}
-	model.Password = s.Password
-}
-
-type UpdateSysDeviceAvatarReq struct {
-	UserId int    `json:"userId" comment:"用户ID" vd:"len($)>0"` // 用户ID
-	Avatar string `json:"avatar" comment:"头像" vd:"len($)>0"`
-	common.ControlBy
-}
-
-func (s *UpdateSysDeviceAvatarReq) GetId() interface{} {
-	return s.UserId
-}
-
-func (s *UpdateSysDeviceAvatarReq) Generate(model *models.SysDevice) {
-	if s.UserId != 0 {
-		model.UserId = s.UserId
-	}
-	model.Avatar = s.Avatar
-}
-
-type UpdateSysDeviceStatusReq struct {
-	UserId int    `json:"userId" comment:"用户ID" vd:"$>0"` // 用户ID
-	Status string `json:"status" comment:"状态" vd:"len($)>0"`
-	common.ControlBy
-}
-
-func (s *UpdateSysDeviceStatusReq) GetId() interface{} {
-	return s.UserId
-}
-
-func (s *UpdateSysDeviceStatusReq) Generate(model *models.SysDevice) {
-	if s.UserId != 0 {
-		model.UserId = s.UserId
-	}
-	model.Status = s.Status
-}
-
-type SysDeviceInsertReq struct {
-	UserId   int    `json:"userId" comment:"用户ID"` // 用户ID
-	Username string `json:"username" comment:"用户名" vd:"len($)>0"`
-	Password string `json:"password" comment:"密码"`
-	NickName string `json:"nickName" comment:"昵称" vd:"len($)>0"`
-	Phone    string `json:"phone" comment:"手机号" vd:"len($)>0"`
-	RoleId   int    `json:"roleId" comment:"角色ID"`
-	Avatar   string `json:"avatar" comment:"头像"`
-	Sex      string `json:"sex" comment:"性别"`
-	Email    string `json:"email" comment:"邮箱" vd:"len($)>0,email"`
-	DeptId   int    `json:"deptId" comment:"部门" vd:"$>0"`
-	PostId   int    `json:"postId" comment:"岗位"`
-	Remark   string `json:"remark" comment:"备注"`
-	Status   string `json:"status" comment:"状态" vd:"len($)>0" default:"1"`
-	common.ControlBy
-}
-
-func (s *SysDeviceInsertReq) Generate(model *models.SysDevice) {
-	if s.UserId != 0 {
-		model.UserId = s.UserId
-	}
-	model.Username = s.Username
-	model.Password = s.Password
-	model.NickName = s.NickName
-	model.Phone = s.Phone
-	model.RoleId = s.RoleId
-	model.Avatar = s.Avatar
-	model.Sex = s.Sex
-	model.Email = s.Email
-	model.DeptId = s.DeptId
-	model.PostId = s.PostId
-	model.Remark = s.Remark
-	model.Status = s.Status
-	model.CreateBy = s.CreateBy
-}
-
-func (s *SysDeviceInsertReq) GetId() interface{} {
-	return s.UserId
-}
-
-type SysDeviceUpdateReq struct {
-	UserId   int    `json:"userId" comment:"用户ID"` // 用户ID
-	Username string `json:"username" comment:"用户名" vd:"len($)>0"`
-	NickName string `json:"nickName" comment:"昵称" vd:"len($)>0"`
-	Phone    string `json:"phone" comment:"手机号" vd:"len($)>0"`
-	RoleId   int    `json:"roleId" comment:"角色ID"`
-	Avatar   string `json:"avatar" comment:"头像"`
-	Sex      string `json:"sex" comment:"性别"`
-	Email    string `json:"email" comment:"邮箱" vd:"len($)>0,email"`
-	DeptId   int    `json:"deptId" comment:"部门" vd:"$>0"`
-	PostId   int    `json:"postId" comment:"岗位"`
-	Remark   string `json:"remark" comment:"备注"`
-	Status   string `json:"status" comment:"状态" default:"1"`
-	common.ControlBy
-}
-
-func (s *SysDeviceUpdateReq) Generate(model *models.SysDevice) {
-	if s.UserId != 0 {
-		model.UserId = s.UserId
-	}
-	model.Username = s.Username
-	model.NickName = s.NickName
-	model.Phone = s.Phone
-	model.RoleId = s.RoleId
-	model.Avatar = s.Avatar
-	model.Sex = s.Sex
-	model.Email = s.Email
-	model.DeptId = s.DeptId
-	model.PostId = s.PostId
-	model.Remark = s.Remark
-	model.Status = s.Status
-}
-
-func (s *SysDeviceUpdateReq) GetId() interface{} {
-	return s.UserId
+	UserIdOrder    string `search:"type:order;column:user_id;table:sys_device" form:"userIdOrder"`
+	UsernameOrder  string `search:"type:order;column:username;table:sys_device" form:"usernameOrder"`
+	StatusOrder    string `search:"type:order;column:status;table:sys_device" form:"statusOrder"`
+	CreatedAtOrder string `search:"type:order;column:created_at;table:sys_device" form:"createdAtOrder"`
 }
 
 type SysDeviceById struct {
@@ -182,8 +45,16 @@ func (s *SysDeviceById) GenerateM() (common.ActiveRecord, error) {
 	return &models.SysDevice{}, nil
 }
 
-// PassWord 密码
-type PassWord struct {
-	NewPassword string `json:"newPassword" vd:"len($)>0"`
-	OldPassword string `json:"oldPassword" vd:"len($)>0"`
+type SysDeviceInsertReq struct {
+	Id         string `json:"id" gorm:"size:64;comment:设备名称"`
+	DeviceName string `json:"device_name" gorm:"size:64;comment:设备名称"`
+	UserID     string `json:"user_id" gorm:"size:128;comment:用户编号"`
+	DeviceSn   string `json:"device_sn" gorm:"size:128;comment:设备sn号"`
+	ImgUrl     string `json:"img_url" gorm:"size:128;comment:设备图片"`
+	Status     string `json:"status" gorm:"size:4;comment:状态 0:正常 1：停用 2：删除"`
+	common.ControlBy
+}
+
+func (s *SysDeviceInsertReq) GetId() interface{} {
+	return s.Id
 }

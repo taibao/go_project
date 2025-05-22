@@ -6,8 +6,10 @@ import (
 
 type SysDevice struct {
 	ID         int64  `gorm:"primaryKey;autoIncrement;comment:设备编号" json:"id"`
-	DeviceName string `json:"deviceName" gorm:"size:64;comment:设备名称"`
-	UserID     string `json:"userId" gorm:"size:128;comment:用户编号"`
+	DeviceName string `json:"device_name" gorm:"size:64;comment:设备名称"`
+	UserID     string `json:"user_id" gorm:"size:128;comment:用户编号"`
+	DeviceSn   string `json:"device_sn" gorm:"size:128;comment:设备sn号"`
+	ImgUrl     string `json:"img_url" gorm:"size:128;comment:设备图片"`
 	Status     string `json:"status" gorm:"size:4;comment:状态 0:正常 1：停用 2：删除"`
 	models.ControlBy
 	models.ModelTime
