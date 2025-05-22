@@ -38,9 +38,9 @@ func (e *SysDevice) GetPage(c *dto.SysDeviceGetPageReq, p *actions.DataPermissio
 	return nil
 }
 
-// Get 获取SysUser对象
-func (e *SysUser) Get(d *dto.SysUserById, p *actions.DataPermission, model *models.SysUser) error {
-	var data models.SysUser
+// Get 获取SysDevice对象
+func (e *SysDevice) Get(d *dto.SysDeviceById, p *actions.DataPermission, model *models.SysDevice) error {
+	var data models.SysDevice
 
 	err := e.Orm.Model(&data).Debug().
 		Scopes(
@@ -59,10 +59,10 @@ func (e *SysUser) Get(d *dto.SysUserById, p *actions.DataPermission, model *mode
 	return nil
 }
 
-// Insert 创建SysUser对象
-func (e *SysUser) Insert(c *dto.SysUserInsertReq) error {
+// Insert 创建SysDevice对象
+func (e *SysDevice) Insert(c *dto.SysDeviceInsertReq) error {
 	var err error
-	var data models.SysUser
+	var data models.SysDevice
 	var i int64
 	err = e.Orm.Model(&data).Where("username = ?", c.Username).Count(&i).Error
 	if err != nil {
@@ -83,15 +83,15 @@ func (e *SysUser) Insert(c *dto.SysUserInsertReq) error {
 	return nil
 }
 
-// Update 修改SysUser对象
-func (e *SysUser) Update(c *dto.SysUserUpdateReq, p *actions.DataPermission) error {
+// Update 修改SysDevice对象
+func (e *SysDevice) Update(c *dto.SysDeviceUpdateReq, p *actions.DataPermission) error {
 	var err error
-	var model models.SysUser
+	var model models.SysDevice
 	db := e.Orm.Scopes(
 		actions.Permission(model.TableName(), p),
 	).First(&model, c.GetId())
 	if err = db.Error; err != nil {
-		e.Log.Errorf("Service UpdateSysUser error: %s", err)
+		e.Log.Errorf("Service UpdateSysDevice error: %s", err)
 		return err
 	}
 	if db.RowsAffected == 0 {
@@ -113,14 +113,14 @@ func (e *SysUser) Update(c *dto.SysUserUpdateReq, p *actions.DataPermission) err
 }
 
 // UpdateAvatar 更新用户头像
-func (e *SysUser) UpdateAvatar(c *dto.UpdateSysUserAvatarReq, p *actions.DataPermission) error {
+func (e *SysDevice) UpdateAvatar(c *dto.UpdateSysDeviceAvatarReq, p *actions.DataPermission) error {
 	var err error
-	var model models.SysUser
+	var model models.SysDevice
 	db := e.Orm.Scopes(
 		actions.Permission(model.TableName(), p),
 	).First(&model, c.GetId())
 	if err = db.Error; err != nil {
-		e.Log.Errorf("Service UpdateSysUser error: %s", err)
+		e.Log.Errorf("Service UpdateSysDevice error: %s", err)
 		return err
 	}
 	if db.RowsAffected == 0 {
@@ -129,21 +129,21 @@ func (e *SysUser) UpdateAvatar(c *dto.UpdateSysUserAvatarReq, p *actions.DataPer
 	}
 	err = e.Orm.Table(model.TableName()).Where("user_id =? ", c.UserId).Updates(c).Error
 	if err != nil {
-		e.Log.Errorf("Service UpdateSysUser error: %s", err)
+		e.Log.Errorf("Service UpdateSysDevice error: %s", err)
 		return err
 	}
 	return nil
 }
 
 // UpdateStatus 更新用户状态
-func (e *SysUser) UpdateStatus(c *dto.UpdateSysUserStatusReq, p *actions.DataPermission) error {
+func (e *SysDevice) UpdateStatus(c *dto.UpdateSysDeviceStatusReq, p *actions.DataPermission) error {
 	var err error
-	var model models.SysUser
+	var model models.SysDevice
 	db := e.Orm.Scopes(
 		actions.Permission(model.TableName(), p),
 	).First(&model, c.GetId())
 	if err = db.Error; err != nil {
-		e.Log.Errorf("Service UpdateSysUser error: %s", err)
+		e.Log.Errorf("Service UpdateSysDevice error: %s", err)
 		return err
 	}
 	if db.RowsAffected == 0 {
@@ -152,21 +152,21 @@ func (e *SysUser) UpdateStatus(c *dto.UpdateSysUserStatusReq, p *actions.DataPer
 	}
 	err = e.Orm.Table(model.TableName()).Where("user_id =? ", c.UserId).Updates(c).Error
 	if err != nil {
-		e.Log.Errorf("Service UpdateSysUser error: %s", err)
+		e.Log.Errorf("Service UpdateSysDevice error: %s", err)
 		return err
 	}
 	return nil
 }
 
 // ResetPwd 重置用户密码
-func (e *SysUser) ResetPwd(c *dto.ResetSysUserPwdReq, p *actions.DataPermission) error {
+func (e *SysDevice) ResetPwd(c *dto.ResetSysDevicePwdReq, p *actions.DataPermission) error {
 	var err error
-	var model models.SysUser
+	var model models.SysDevice
 	db := e.Orm.Scopes(
 		actions.Permission(model.TableName(), p),
 	).First(&model, c.GetId())
 	if err = db.Error; err != nil {
-		e.Log.Errorf("At Service ResetSysUserPwd error: %s", err)
+		e.Log.Errorf("At Service ResetSysDevicePwd error: %s", err)
 		return err
 	}
 	if db.RowsAffected == 0 {
@@ -175,23 +175,23 @@ func (e *SysUser) ResetPwd(c *dto.ResetSysUserPwdReq, p *actions.DataPermission)
 	c.Generate(&model)
 	err = e.Orm.Omit("username", "nick_name", "phone", "role_id", "avatar", "sex").Save(&model).Error
 	if err != nil {
-		e.Log.Errorf("At Service ResetSysUserPwd error: %s", err)
+		e.Log.Errorf("At Service ResetSysDevicePwd error: %s", err)
 		return err
 	}
 	return nil
 }
 
-// Remove 删除SysUser
-func (e *SysUser) Remove(c *dto.SysUserById, p *actions.DataPermission) error {
+// Remove 删除SysDevice
+func (e *SysDevice) Remove(c *dto.SysDeviceById, p *actions.DataPermission) error {
 	var err error
-	var data models.SysUser
+	var data models.SysDevice
 
 	db := e.Orm.Model(&data).
 		Scopes(
 			actions.Permission(data.TableName(), p),
 		).Delete(&data, c.GetId())
 	if err = db.Error; err != nil {
-		e.Log.Errorf("Error found in  RemoveSysUser : %s", err)
+		e.Log.Errorf("Error found in  RemoveSysDevice : %s", err)
 		return err
 	}
 	if db.RowsAffected == 0 {
@@ -200,14 +200,14 @@ func (e *SysUser) Remove(c *dto.SysUserById, p *actions.DataPermission) error {
 	return nil
 }
 
-// UpdatePwd 修改SysUser对象密码
-func (e *SysUser) UpdatePwd(id int, oldPassword, newPassword string, p *actions.DataPermission) error {
+// UpdatePwd 修改SysDevice对象密码
+func (e *SysDevice) UpdatePwd(id int, oldPassword, newPassword string, p *actions.DataPermission) error {
 	var err error
 
 	if newPassword == "" {
 		return nil
 	}
-	c := &models.SysUser{}
+	c := &models.SysDevice{}
 
 	err = e.Orm.Model(c).
 		Scopes(
@@ -248,7 +248,7 @@ func (e *SysUser) UpdatePwd(id int, oldPassword, newPassword string, p *actions.
 	return nil
 }
 
-func (e *SysUser) GetProfile(c *dto.SysUserById, user *models.SysUser, roles *[]models.SysRole, posts *[]models.SysPost) error {
+func (e *SysDevice) GetProfile(c *dto.SysDeviceById, user *models.SysDevice, roles *[]models.SysRole, posts *[]models.SysPost) error {
 	err := e.Orm.Preload("Dept").First(user, c.GetId()).Error
 	if err != nil {
 		return err
