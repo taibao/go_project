@@ -1,7 +1,13 @@
 package service
 
 import (
+	"errors"
 	"github.com/go-admin-team/go-admin-core/sdk/service"
+	"go-admin/app/admin/models"
+	"go-admin/app/admin/service/dto"
+	"go-admin/common/actions"
+	cDto "go-admin/common/dto"
+	"gorm.io/gorm"
 )
 
 type SysDevice struct {
@@ -9,69 +15,68 @@ type SysDevice struct {
 }
 
 // GetPage 获取SysDevice列表
-//func (e *SysDevice) GetPage(c *dto.SysDeviceGetPageReq, p *actions.DataPermission, list *[]models.SysDevice, count *int64) error {
-//	var err error
-//	var data models.SysDevice
-//
-//	err = e.Orm.Debug().Preload("Location"). // 假设设备有关联 Location 表
-//							Scopes(
-//			cDto.MakeCondition(c.GetNeedSearch()),
-//			cDto.Paginate(c.GetPageSize(), c.GetPageIndex()),
-//			actions.Permission(data.TableName(), p),
-//		).
-//		Find(list).Limit(-1).Offset(-1).
-//		Count(count).Error
-//	if err != nil {
-//		e.Log.Errorf("db error: %s", err)
-//		return err
-//	}
-//	return nil
-//}
+func (e *SysDevice) GetPage(c *dto.SysDeviceGetPageReq, p *actions.DataPermission, list *[]models.SysDevice, count *int64) error {
+	var err error
+	var data models.SysDevice
+
+	err = e.Orm.Debug().Scopes(
+		cDto.MakeCondition(c.GetNeedSearch()),
+		cDto.Paginate(c.GetPageSize(), c.GetPageIndex()),
+		actions.Permission(data.TableName(), p),
+	).
+		Find(list).Limit(-1).Offset(-1).
+		Count(count).Error
+	if err != nil {
+		e.Log.Errorf("db error: %s", err)
+		return err
+	}
+	return nil
+}
 
 // Get 获取SysDevice对象
-//func (e *SysDevice) Get(d *dto.SysDeviceById, p *actions.DataPermission, model *models.SysDevice) error {
-//	var data models.SysDevice
-//
-//	err := e.Orm.Model(&data).Debug().
-//		Scopes(
-//			actions.Permission(data.TableName(), p),
-//		).
-//		First(model, d.GetId()).Error
-//	if err != nil && errors.Is(err, gorm.ErrRecordNotFound) {
-//		err = errors.New("查看对象不存在或无权查看")
-//		e.Log.Errorf("db error: %s", err)
-//		return err
-//	}
-//	if err != nil {
-//		e.Log.Errorf("db error: %s", err)
-//		return err
-//	}
-//	return nil
-//}
+func (e *SysDevice) Get(d *dto.SysDeviceById, p *actions.DataPermission, model *models.SysDevice) error {
+	var data models.SysDevice
+
+	err := e.Orm.Model(&data).Debug().
+		Scopes(
+			actions.Permission(data.TableName(), p),
+		).
+		First(model, d.GetId()).Error
+	if err != nil && errors.Is(err, gorm.ErrRecordNotFound) {
+		err = errors.New("查看对象不存在或无权查看")
+		e.Log.Errorf("db error: %s", err)
+		return err
+	}
+	if err != nil {
+		e.Log.Errorf("db error: %s", err)
+		return err
+	}
+	return nil
+}
 
 // Insert 创建SysDevice对象
-//func (e *SysDevice) Insert(c *dto.SysDeviceInsertReq) error {
-//	var err error
-//	var data models.SysDevice
-//	var i int64
-//	err = e.Orm.Model(&data).Where("username = ?", c.Username).Count(&i).Error
-//	if err != nil {
-//		e.Log.Errorf("db error: %s", err)
-//		return err
-//	}
-//	if i > 0 {
-//		err := errors.New("用户名已存在！")
-//		e.Log.Errorf("db error: %s", err)
-//		return err
-//	}
-//	c.Generate(&data)
-//	err = e.Orm.Create(&data).Error
-//	if err != nil {
-//		e.Log.Errorf("db error: %s", err)
-//		return err
-//	}
-//	return nil
-//}
+func (e *SysDevice) Insert(c *dto.SysDeviceInsertReq) error {
+	var err error
+	var data models.SysDevice
+	var i int64
+	err = e.Orm.Model(&data).Where("device_name = ?", c.DeviceName).Count(&i).Error
+	if err != nil {
+		e.Log.Errorf("db error: %s", err)
+		return err
+	}
+	if i > 0 {
+		err := errors.New("设备名称已存在！")
+		e.Log.Errorf("db error: %s", err)
+		return err
+	}
+	c.Generate(&data)
+	err = e.Orm.Create(&data).Error
+	if err != nil {
+		e.Log.Errorf("db error: %s", err)
+		return err
+	}
+	return nil
+}
 
 // Update 修改SysDevice对象
 //func (e *SysDevice) Update(c *dto.SysDeviceUpdateReq, p *actions.DataPermission) error {
