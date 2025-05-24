@@ -61,3 +61,53 @@ func (s *SysDeviceInsertReq) Generate(model *models.SysDevice) {
 	model.DeviceName = s.DeviceName
 	model.ImgUrl = s.ImgUrl
 }
+
+type SysDeviceUpdateReq struct {
+	Id         int64  `json:"id" gorm:"size:64;comment:设备名称"`
+	DeviceName string `json:"device_name" gorm:"size:64;comment:设备名称"`
+	UserID     int    `json:"user_id" gorm:"size:128;comment:用户编号"`
+	DeviceSn   string `json:"device_sn" gorm:"size:128;comment:设备sn号"`
+	ImgUrl     string `json:"img_url" gorm:"size:128;comment:设备图片"`
+	Status     string `json:"status" gorm:"size:4;comment:状态 0:正常 1：停用 2：删除"`
+	common.ControlBy
+}
+
+func (s *SysDeviceUpdateReq) GetId() interface{} {
+	return s.Id
+}
+
+func (s *SysDeviceUpdateReq) Generate(model *models.SysDevice) {
+	if s.Id != 0 {
+		model.ID = s.Id
+	}
+	model.DeviceName = s.DeviceName
+}
+
+type UpdateSysDeviceImageUrlReq struct {
+	Id         int64  `json:"id" gorm:"size:64;comment:设备名称"`
+	DeviceName string `json:"device_name" gorm:"size:64;comment:设备名称"`
+	UserID     int    `json:"user_id" gorm:"size:128;comment:用户编号"`
+	DeviceSn   string `json:"device_sn" gorm:"size:128;comment:设备sn号"`
+	ImgUrl     string `json:"img_url" gorm:"size:128;comment:设备图片"`
+	Status     string `json:"status" gorm:"size:4;comment:状态 0:正常 1：停用 2：删除"`
+	common.ControlBy
+}
+
+func (s *UpdateSysDeviceImageUrlReq) GetId() interface{} {
+	return s.Id
+}
+
+// 更新设备状态
+type UpdateSysDeviceStatusReq struct {
+	Id         int64  `json:"id" gorm:"size:64;comment:设备名称"`
+	DeviceName string `json:"device_name" gorm:"size:64;comment:设备名称"`
+	UserID     int    `json:"user_id" gorm:"size:128;comment:用户编号"`
+	DeviceSn   string `json:"device_sn" gorm:"size:128;comment:设备sn号"`
+	ImgUrl     string `json:"img_url" gorm:"size:128;comment:设备图片"`
+	Status     string `json:"status" gorm:"size:4;comment:状态 0:正常 1：停用 2：删除"`
+	common.ControlBy
+}
+
+func (s *UpdateSysDeviceStatusReq) GetId() interface{} {
+	return s.Id
+}

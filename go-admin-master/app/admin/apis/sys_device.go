@@ -134,32 +134,32 @@ func (e SysDevice) Insert(c *gin.Context) {
 // @Router /api/v1/sys-device/{userId} [put]
 // @Security Bearer
 
-//func (e SysDevice) Update(c *gin.Context) {
-//	s := service.SysDevice{}
-//	req := dto.SysDeviceUpdateReq{}
-//	err := e.MakeContext(c).
-//		MakeOrm().
-//		Bind(&req).
-//		MakeService(&s.Service).
-//		Errors
-//	if err != nil {
-//		e.Logger.Error(err)
-//		e.Error(500, err, err.Error())
-//		return
-//	}
-//
-//	req.SetUpdateBy(user.GetUserId(c))
-//
-//	//数据权限检查
-//	p := actions.GetPermissionFromContext(c)
-//
-//	err = s.Update(&req, p)
-//	if err != nil {
-//		e.Logger.Error(err)
-//		return
-//	}
-//	e.OK(req.GetId(), "更新成功")
-//}
+func (e SysDevice) Update(c *gin.Context) {
+	s := service.SysDevice{}
+	req := dto.SysDeviceUpdateReq{}
+	err := e.MakeContext(c).
+		MakeOrm().
+		Bind(&req).
+		MakeService(&s.Service).
+		Errors
+	if err != nil {
+		e.Logger.Error(err)
+		e.Error(500, err, err.Error())
+		return
+	}
+
+	req.SetUpdateBy(user.GetUserId(c))
+
+	//数据权限检查
+	p := actions.GetPermissionFromContext(c)
+
+	err = s.Update(&req, p)
+	if err != nil {
+		e.Logger.Error(err)
+		return
+	}
+	e.OK(req.GetId(), "更新成功")
+}
 
 // Delete
 // @Summary 删除用户数据
@@ -170,30 +170,30 @@ func (e SysDevice) Insert(c *gin.Context) {
 // @Router /api/v1/sys-device/{userId} [delete]
 // @Security Bearer
 
-//func (e SysDevice) Delete(c *gin.Context) {
-//	s := service.SysDevice{}
-//	req := dto.SysDeviceById{}
-//	err := e.MakeContext(c).
-//		MakeOrm().
-//		Bind(&req, binding.JSON).
-//		MakeService(&s.Service).
-//		Errors
-//	if err != nil {
-//		e.Logger.Error(err)
-//		e.Error(500, err, err.Error())
-//		return
-//	}
-//
-//	// 设置编辑人
-//	req.SetUpdateBy(user.GetUserId(c))
-//
-//	// 数据权限检查
-//	p := actions.GetPermissionFromContext(c)
-//
-//	err = s.Remove(&req, p)
-//	if err != nil {
-//		e.Logger.Error(err)
-//		return
-//	}
-//	e.OK(req.GetId(), "删除成功")
-//}
+func (e SysDevice) Delete(c *gin.Context) {
+	s := service.SysDevice{}
+	req := dto.SysDeviceById{}
+	err := e.MakeContext(c).
+		MakeOrm().
+		Bind(&req, binding.JSON).
+		MakeService(&s.Service).
+		Errors
+	if err != nil {
+		e.Logger.Error(err)
+		e.Error(500, err, err.Error())
+		return
+	}
+
+	// 设置编辑人
+	req.SetUpdateBy(user.GetUserId(c))
+
+	// 数据权限检查
+	p := actions.GetPermissionFromContext(c)
+
+	err = s.Remove(&req, p)
+	if err != nil {
+		e.Logger.Error(err)
+		return
+	}
+	e.OK(req.GetId(), "删除成功")
+}
