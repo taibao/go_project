@@ -24,7 +24,7 @@ type SysDevice struct {
 // @Tags 用户
 // @Param username query string false "username"
 // @Success 200 {string} {object} response.Response "{"code": 200, "data": [...]}"
-// @Router /api/v1/sys-user [get]
+// @Router /api/v1/sys-device [get]
 // @Security Bearer
 func (e SysDevice) GetPage(c *gin.Context) {
 	s := service.SysDevice{}
@@ -61,7 +61,7 @@ func (e SysDevice) GetPage(c *gin.Context) {
 // @Tags 用户
 // @Param userId path int true "用户编码"
 // @Success 200 {object} response.Response "{"code": 200, "data": [...]}"
-// @Router /api/v1/sys-user/{userId} [get]
+// @Router /api/v1/sys-device/{userId} [get]
 // @Security Bearer
 func (e SysDevice) Get(c *gin.Context) {
 	s := service.SysDevice{}
@@ -96,7 +96,7 @@ func (e SysDevice) Get(c *gin.Context) {
 // @Product application/json
 // @Param data body dto.SysDeviceInsertReq true "用户数据"
 // @Success 200 {object} response.Response "{"code": 200, "data": [...]}"
-// @Router /api/v1/sys-user [post]
+// @Router /api/v1/sys-device [post]
 // @Security Bearer
 func (e SysDevice) Insert(c *gin.Context) {
 	s := service.SysDevice{}
@@ -131,7 +131,7 @@ func (e SysDevice) Insert(c *gin.Context) {
 // @Product application/json
 // @Param data body dto.SysDeviceUpdateReq true "body"
 // @Success 200 {object} response.Response "{"code": 200, "data": [...]}"
-// @Router /api/v1/sys-user/{userId} [put]
+// @Router /api/v1/sys-device/{userId} [put]
 // @Security Bearer
 
 //func (e SysDevice) Update(c *gin.Context) {
@@ -167,7 +167,7 @@ func (e SysDevice) Insert(c *gin.Context) {
 // @Tags 用户
 // @Param userId path int true "userId"
 // @Success 200 {object} response.Response "{"code": 200, "data": [...]}"
-// @Router /api/v1/sys-user/{userId} [delete]
+// @Router /api/v1/sys-device/{userId} [delete]
 // @Security Bearer
 
 //func (e SysDevice) Delete(c *gin.Context) {
