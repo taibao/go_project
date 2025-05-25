@@ -1,22 +1,25 @@
 package models
 
 import (
+
 	"go-admin/common/models"
+
 )
 
 type SysDevice struct {
-	ID         int64  `gorm:"primaryKey;autoIncrement;comment:设备编号" json:"id"`
-	DeviceName string `json:"device_name" gorm:"size:64;comment:设备名称"`
-	UserID     int    `json:"user_id" gorm:"size:128;comment:用户编号"`
-	DeviceSn   string `json:"device_sn" gorm:"size:128;comment:设备sn号"`
-	ImgUrl     string `json:"img_url" gorm:"size:128;comment:设备图片"`
-	Status     string `json:"status" gorm:"size:4;comment:状态 0:正常 1：停用 2：删除"`
-	models.ControlBy
-	models.ModelTime
+    models.Model
+    
+    DeviceName string `json:"deviceName" gorm:"type:varchar(64);comment:设备名称"` 
+    DeviceSn string `json:"deviceSn" gorm:"type:varchar(64);comment:设备sn号"` 
+    ImgUrl string `json:"imgUrl" gorm:"type:int;comment:图片链接"` 
+    UserId string `json:"userId" gorm:"type:varchar(128);comment:用户编号"` 
+    Status string `json:"status" gorm:"type:varchar(4);comment:状态 0:正常 1：停用 2：删除"` 
+    models.ModelTime
+    models.ControlBy
 }
 
-func (*SysDevice) TableName() string {
-	return "sys_device"
+func (SysDevice) TableName() string {
+    return "sys_device"
 }
 
 func (e *SysDevice) Generate() models.ActiveRecord {
@@ -25,5 +28,5 @@ func (e *SysDevice) Generate() models.ActiveRecord {
 }
 
 func (e *SysDevice) GetId() interface{} {
-	return e.ID
+	return e.Id
 }

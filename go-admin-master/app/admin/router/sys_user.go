@@ -33,16 +33,6 @@ func registerSysUserRouter(v1 *gin.RouterGroup, authMiddleware *jwt.GinJWTMiddle
 		user.PUT("/status", api.UpdateStatus)
 	}
 
-	//设备管理列表
-	devices := v1.Group("/devices").Use(authMiddleware.MiddlewareFunc()).Use(middleware.AuthCheckRole()).Use(actions.PermissionAction())
-	{
-		devices.GET("", api.GetPage)
-		devices.GET("/:id", api.Get)
-		devices.POST("", api.Insert)
-		devices.PUT("", api.Update)
-		devices.DELETE("", api.Delete)
-	}
-
 	v1auth := v1.Group("").Use(authMiddleware.MiddlewareFunc())
 	{
 		v1auth.GET("/getinfo", api.GetInfo)
