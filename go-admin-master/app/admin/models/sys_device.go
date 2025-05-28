@@ -11,6 +11,7 @@ type SysDevice struct {
 	ImgUrl     string `json:"imgUrl" gorm:"type:int;comment:图片链接"`
 	UserId     string `json:"userId" gorm:"type:varchar(128);comment:用户编号"`
 	Status     string `json:"status" gorm:"type:varchar(4);comment:状态 0:正常 1：停用 2：删除"`
+	Remark     string `json:"remark" gorm:"type:varchar(64);comment:备注"`
 	models.ModelTime
 	models.ControlBy
 }
