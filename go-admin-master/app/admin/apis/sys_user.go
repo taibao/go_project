@@ -451,9 +451,41 @@ func (e SysUser) GetInfo(c *gin.Context) {
 		mp["avatar"] = sysUser.Avatar
 	}
 	mp["userName"] = sysUser.Username
+	mp["recommendUserId"] = sysUser.RecommendUserId
 	mp["userId"] = sysUser.UserId
 	mp["deptId"] = sysUser.DeptId
 	mp["name"] = sysUser.NickName
 	mp["code"] = 200
 	e.OK(mp, "")
+}
+
+// GetUserRecommendTree 获取用户推荐树数据
+// @Summary 获取用户推荐树数据
+// @Description 获取JSON
+// @Tags 用户
+// @Param username query string false "用户名"
+// @Success 200 {object} response.Response "{"code": 200, "data": [...]}"
+// @Router /api/v1/sys-user/recommend-tree [get]
+// @Security Bearer
+func (e SysUser) GetUserRecommendTree(c *gin.Context) {
+	s := service.SysUser{}
+	req := dto.SysUserRecommendTreeReq{}
+	err := e.MakeContext(c).
+		MakeOrm().
+		Bind(&req, binding.Form). // 支持按 username 查询
+		MakeService(&s.Service).
+		Errors
+	if err != nil {
+		e.Logger.Error(err)
+		e.Error(500, err, err.Error())
+		return
+	}
+
+	var list []dto.UserRecommendTreeNode
+	list, err = s.GetUserRecommendTree(&req)
+	if err != nil {
+		e.Error(500, err, "查询失败")
+		return
+	}
+	e.OK(list, "获取用户推荐树成功")
 }

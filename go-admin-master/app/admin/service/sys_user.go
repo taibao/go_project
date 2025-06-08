@@ -1,7 +1,9 @@
 package service
 
 import (
+	"encoding/json"
 	"errors"
+	"fmt"
 	"go-admin/app/admin/models"
 	"go-admin/app/admin/service/dto"
 
@@ -73,6 +75,16 @@ func (e *SysUser) Insert(c *dto.SysUserInsertReq) error {
 		err := errors.New("用户名已存在！")
 		e.Log.Errorf("db error: %s", err)
 		return err
+	}
+	//根据推荐人手机号查询推荐人userid
+	if c.RecommendPhone != "" {
+		var recommendUser models.SysUser
+		err = e.Orm.Model(&recommendUser).Where("phone = ?", c.RecommendPhone).First(&recommendUser).Error
+		if err != nil {
+			e.Log.Errorf("db error: %s", err)
+			return err
+		}
+		c.RecommendUserId = recommendUser.UserId
 	}
 	c.Generate(&data)
 	err = e.Orm.Create(&data).Error
@@ -263,4 +275,54 @@ func (e *SysUser) GetProfile(c *dto.SysUserById, user *models.SysUser, roles *[]
 	}
 
 	return nil
+}
+
+func (s *SysUser) GetUserRecommendTree(req *dto.SysUserRecommendTreeReq) ([]dto.UserRecommendTreeNode, error) {
+	var users []models.SysUser
+
+	query := s.Orm.Model(&models.SysUser{})
+	if req.Username != "" {
+		query = query.Where("username LIKE ?", "%"+req.Username+"%")
+	}
+
+	err := query.Find(&users).Error
+	if err != nil {
+		return nil, err
+	}
+
+	return BuildUserRecommendTree(users), nil
+}
+
+// BuildUserRecommendTree 构建用户推荐树
+func BuildUserRecommendTree(users []models.SysUser) []dto.UserRecommendTreeNode {
+	userMap := make(map[int]dto.UserRecommendTreeNode)
+	for _, u := range users {
+		userMap[u.UserId] = dto.UserRecommendTreeNode{
+			UserId:   u.UserId,
+			Username: u.Username,
+			NickName: u.NickName,
+			Avatar:   u.Avatar,
+			Children: make([]dto.UserRecommendTreeNode, 0),
+		}
+	}
+
+	// 构建父子关系
+	treeRoots := make([]dto.UserRecommendTreeNode, 0)
+
+	for _, u := range users {
+		node := userMap[u.UserId]
+
+		if u.RecommendUserId == 0 || u.RecommendUserId == u.UserId {
+			// 根节点或自荐情况
+			treeRoots = append(treeRoots, node)
+		} else if parent, exists := userMap[u.RecommendUserId]; exists {
+			parent.Children = append(parent.Children, node)
+			userMap[u.RecommendUserId] = parent // 更新父节点
+		}
+	}
+
+	treeRootsStr, _ := json.Marshal(treeRoots)
+	fmt.Println(string(treeRootsStr))
+
+	return treeRoots
 }

@@ -89,19 +89,21 @@ func (s *UpdateSysUserStatusReq) Generate(model *models.SysUser) {
 }
 
 type SysUserInsertReq struct {
-	UserId   int    `json:"userId" comment:"用户ID"` // 用户ID
-	Username string `json:"username" comment:"用户名" vd:"len($)>0"`
-	Password string `json:"password" comment:"密码"`
-	NickName string `json:"nickName" comment:"昵称" vd:"len($)>0"`
-	Phone    string `json:"phone" comment:"手机号" vd:"len($)>0"`
-	RoleId   int    `json:"roleId" comment:"角色ID"`
-	Avatar   string `json:"avatar" comment:"头像"`
-	Sex      string `json:"sex" comment:"性别"`
-	Email    string `json:"email" comment:"邮箱" vd:"len($)>0,email"`
-	DeptId   int    `json:"deptId" comment:"部门" vd:"$>0"`
-	PostId   int    `json:"postId" comment:"岗位"`
-	Remark   string `json:"remark" comment:"备注"`
-	Status   string `json:"status" comment:"状态" vd:"len($)>0" default:"1"`
+	UserId          int    `json:"userId" comment:"用户ID"`            // 用户ID
+	RecommendUserId int    `json:"recommendUserId" comment:"推荐用户ID"` // 用户ID
+	Username        string `json:"username" comment:"用户名" vd:"len($)>0"`
+	Password        string `json:"password" comment:"密码"`
+	NickName        string `json:"nickName" comment:"昵称" vd:"len($)>0"`
+	Phone           string `json:"phone" comment:"手机号" vd:"len($)>0"`
+	RecommendPhone  string `json:"recommend_phone" comment:"推荐人手机号" vd:"len($)>0"`
+	RoleId          int    `json:"roleId" comment:"角色ID"`
+	Avatar          string `json:"avatar" comment:"头像"`
+	Sex             string `json:"sex" comment:"性别"`
+	Email           string `json:"email" comment:"邮箱" vd:"len($)>0,email"`
+	DeptId          int    `json:"deptId" comment:"部门" vd:"$>0"`
+	PostId          int    `json:"postId" comment:"岗位"`
+	Remark          string `json:"remark" comment:"备注"`
+	Status          string `json:"status" comment:"状态" vd:"len($)>0" default:"1"`
 	common.ControlBy
 }
 
@@ -112,6 +114,7 @@ func (s *SysUserInsertReq) Generate(model *models.SysUser) {
 	model.Username = s.Username
 	model.Password = s.Password
 	model.NickName = s.NickName
+	model.RecommendUserId = s.RecommendUserId
 	model.Phone = s.Phone
 	model.RoleId = s.RoleId
 	model.Avatar = s.Avatar
@@ -186,4 +189,17 @@ func (s *SysUserById) GenerateM() (common.ActiveRecord, error) {
 type PassWord struct {
 	NewPassword string `json:"newPassword" vd:"len($)>0"`
 	OldPassword string `json:"oldPassword" vd:"len($)>0"`
+}
+
+type SysUserRecommendTreeReq struct {
+	dto.Pagination `search:"-"` // 分页信息可选
+	Username       string       `form:"username" json:"username"` // 可选查询条件
+}
+
+type UserRecommendTreeNode struct {
+	UserId   int                     `json:"userId"`
+	Username string                  `json:"username"`
+	NickName string                  `json:"nickName"`
+	Avatar   string                  `json:"avatar,omitempty"`
+	Children []UserRecommendTreeNode `json:"children,omitempty"`
 }
